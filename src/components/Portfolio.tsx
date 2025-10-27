@@ -84,7 +84,7 @@ const Portfolio = () => {
                 {category.companies.map((company, companyIndex) => (
                   <div
                     key={companyIndex}
-                    className="flex flex-col items-center justify-center p-6 rounded-lg bg-background/50 hover:bg-background transition-all duration-300 hover:scale-105 min-h-[120px] group/logo gap-3"
+                    className="flex flex-col items-center justify-center p-6 rounded-lg bg-white/10 hover:bg-white/15 transition-all duration-300 hover:scale-105 min-h-[120px] group/logo gap-3"
                   >
                     {company.logo && (
                       <img

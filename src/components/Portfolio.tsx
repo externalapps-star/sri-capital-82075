@@ -1,22 +1,53 @@
+import fakespotLogo from "@/assets/logos/fakespot.png";
+import edgetensorLogo from "@/assets/logos/edgetensor.png";
+import softwearLogo from "@/assets/logos/softwear-automation.png";
+import xookLogo from "@/assets/logos/xook.jpg";
+import phenomLogo from "@/assets/logos/phenom.webp";
+import yellowdigLogo from "@/assets/logos/yellowdig.jpg";
+import healthifyLogo from "@/assets/logos/healthifyme.jpg";
+import cureskinLogo from "@/assets/logos/cureskin.jpg";
+import initoLogo from "@/assets/logos/inito.jpg";
+
+type Company = {
+  name: string;
+  logo?: string;
+};
+
 const portfolioCategories = [
   {
     title: "Artificial Intelligence",
-    companies: ["Fakespot", "EZDubs", "Edgetensor"],
+    companies: [
+      { name: "Fakespot", logo: fakespotLogo },
+      { name: "EZDubs" },
+      { name: "Edgetensor", logo: edgetensorLogo },
+    ] as Company[],
     color: "from-blue-500/20 to-purple-500/20",
   },
   {
     title: "Robotics",
-    companies: ["Softwear Automation", "Xook", "DreamVu"],
+    companies: [
+      { name: "Softwear Automation", logo: softwearLogo },
+      { name: "Xook", logo: xookLogo },
+      { name: "DreamVu" },
+    ] as Company[],
     color: "from-cyan-500/20 to-blue-500/20",
   },
   {
     title: "Enterprise Software",
-    companies: ["Phenom People", "Beroe", "Yellowdig"],
+    companies: [
+      { name: "Phenom People", logo: phenomLogo },
+      { name: "Beroe" },
+      { name: "Yellowdig", logo: yellowdigLogo },
+    ] as Company[],
     color: "from-orange-500/20 to-red-500/20",
   },
   {
     title: "Digital Health",
-    companies: ["HealthifyMe", "Cureskin", "Inito"],
+    companies: [
+      { name: "HealthifyMe", logo: healthifyLogo },
+      { name: "Cureskin", logo: cureskinLogo },
+      { name: "Inito", logo: initoLogo },
+    ] as Company[],
     color: "from-green-500/20 to-teal-500/20",
   },
 ];
@@ -50,11 +81,19 @@ const Portfolio = () => {
                 {category.companies.map((company, companyIndex) => (
                   <div
                     key={companyIndex}
-                    className="flex items-center justify-center p-4 rounded-lg bg-background/50 hover:bg-background transition-all duration-300 hover:scale-105 min-h-[80px]"
+                    className="flex items-center justify-center p-6 rounded-lg bg-background/50 hover:bg-background transition-all duration-300 hover:scale-105 min-h-[100px] group/logo"
                   >
-                    <span className="font-sans text-base font-medium text-center">
-                      {company}
-                    </span>
+                    {company.logo ? (
+                      <img
+                        src={company.logo}
+                        alt={`${company.name} logo`}
+                        className="max-w-full max-h-16 object-contain filter brightness-0 dark:brightness-100 dark:invert opacity-60 group-hover/logo:opacity-100 transition-opacity duration-300"
+                      />
+                    ) : (
+                      <span className="font-sans text-base font-medium text-center text-muted-foreground group-hover/logo:text-foreground transition-colors">
+                        {company.name}
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>

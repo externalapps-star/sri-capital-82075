@@ -117,8 +117,8 @@ const Portfolio = () => {
                       isVisible ? 'animate-flip-in' : 'opacity-0'
                     }`}
                     style={{
-                      animationDelay: `${companyIndex * 100}ms`,
-                      perspective: '1000px',
+                      animationDelay: `${(index * 300) + (companyIndex * 150)}ms`,
+                      transformStyle: 'preserve-3d',
                     }}
                   >
                     {company.logo && (

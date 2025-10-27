@@ -102,11 +102,15 @@ export default {
         },
         "flip-in": {
           "0%": {
-            transform: "rotateY(90deg)",
+            transform: "perspective(1000px) rotateY(-90deg)",
             opacity: "0",
           },
+          "50%": {
+            transform: "perspective(1000px) rotateY(-10deg)",
+            opacity: "1",
+          },
           "100%": {
-            transform: "rotateY(0deg)",
+            transform: "perspective(1000px) rotateY(0deg)",
             opacity: "1",
           },
         },
@@ -116,7 +120,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "us-flag": "us-flag 3s ease-in-out infinite",
         "india-flag": "india-flag 3s ease-in-out infinite",
-        "flip-in": "flip-in 0.6s ease-out forwards",
+        "flip-in": "flip-in 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
       },
     },
   },

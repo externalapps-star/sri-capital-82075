@@ -38,21 +38,23 @@ const Portfolio = () => {
           {portfolioCategories.map((category, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,174,255,0.15)] p-10"
+              className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,174,255,0.15)] p-10"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <h3 className="font-serif text-3xl md:text-4xl font-bold mb-10 relative z-10 group-hover:text-primary transition-colors">
+              <h3 className="font-serif text-2xl font-bold mb-8 relative z-10 text-muted-foreground">
                 {category.title}
               </h3>
               
-              <div className="space-y-5 relative z-10">
+              <div className="grid grid-cols-3 gap-6 relative z-10">
                 {category.companies.map((company, companyIndex) => (
                   <div
                     key={companyIndex}
-                    className="font-sans text-xl border-l-2 border-border/30 pl-6 py-2 group-hover:border-primary/50 transition-all duration-300 hover:translate-x-2"
+                    className="flex items-center justify-center p-4 rounded-lg bg-background/50 hover:bg-background transition-all duration-300 hover:scale-105 min-h-[80px]"
                   >
-                    {company}
+                    <span className="font-sans text-base font-medium text-center">
+                      {company}
+                    </span>
                   </div>
                 ))}
               </div>

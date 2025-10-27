@@ -11,7 +11,7 @@ const focusAreas = [
   },
   {
     title: "Robotics",
-    description: "Supporting innovative robotics solutions that enhance automation, manufacturing, and human-robot collaboration.",
+    description: "Investing in the next generation of automation and intelligent systems that enhance human capabilities and productivity.",
     image: roboticsFocusImage,
   },
   {

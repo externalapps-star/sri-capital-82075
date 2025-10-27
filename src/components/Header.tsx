@@ -23,6 +23,13 @@ const Header = () => {
             SRI CAPITAL
           </button>
 
+          {/* Center Tagline - Hidden on mobile */}
+          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2">
+            <p className="font-sans text-sm text-muted-foreground italic">
+              Investing in the Future of Technology
+            </p>
+          </div>
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button

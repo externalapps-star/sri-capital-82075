@@ -84,10 +84,28 @@ export default {
             height: "0",
           },
         },
+        "us-flag": {
+          "0%, 100%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+        },
+        "india-flag": {
+          "0%, 100%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "us-flag": "us-flag 3s ease-in-out infinite",
+        "india-flag": "india-flag 3s ease-in-out infinite",
       },
     },
   },

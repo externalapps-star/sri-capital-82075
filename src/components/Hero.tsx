@@ -6,8 +6,28 @@ const Hero = () => {
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto max-w-5xl text-center relative z-10">
-        <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-fade-in">
-          Early Stage US-India Investors
+        <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight animate-fade-in">
+          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            Early Stage{" "}
+          </span>
+          <span 
+            className="bg-gradient-to-r from-[#B22234] via-white to-[#3C3B6E] bg-clip-text text-transparent animate-us-flag"
+            style={{ backgroundSize: "200% 200%" }}
+          >
+            US
+          </span>
+          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            -
+          </span>
+          <span 
+            className="bg-gradient-to-r from-[#FF9933] via-white to-[#138808] bg-clip-text text-transparent animate-india-flag"
+            style={{ backgroundSize: "200% 200%" }}
+          >
+            India
+          </span>
+          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            {" "}Investors
+          </span>
         </h1>
         <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
           We invest in transformative companies at the intersection of artificial intelligence, 

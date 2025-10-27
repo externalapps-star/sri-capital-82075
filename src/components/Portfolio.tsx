@@ -95,7 +95,6 @@ const Portfolio = () => {
                             ? 'max-w-[70%] max-h-[70%]' 
                             : 'max-w-full max-h-full'
                         }`}
-                        style={{ filter: 'brightness(0) saturate(100%)' }}
                       />
                     )}
                   </div>

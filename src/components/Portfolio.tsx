@@ -112,7 +112,7 @@ const Portfolio = () => {
                   <div
                     key={companyIndex}
                     className={`flex items-center justify-center p-8 rounded-lg bg-white hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo ${
-                      isVisible ? 'animate-flip-in' : 'opacity-0'
+                      isVisible ? 'animate-flip-in' : ''
                     }`}
                     style={{
                       animationDelay: `${(index * 300) + (companyIndex * 150)}ms`,

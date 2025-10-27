@@ -92,12 +92,16 @@ const Portfolio = () => {
                         alt={`${company.name} logo`}
                         className={`object-contain transition-opacity duration-300 ${
                           company.name === 'EZDubs' 
-                            ? 'max-w-[70%] max-h-[70%]' 
+                            ? 'max-w-[70%] max-h-[70%]'
+                            : company.name === 'Edgetensor'
+                            ? 'max-w-full max-h-full'
                             : 'max-w-[150%] max-h-[150%]'
                         }`}
                         style={
                           company.name === 'Softwear Automation' || company.name === 'DreamVu'
                             ? { filter: 'brightness(0) saturate(100%)' }
+                            : company.name === 'Edgetensor'
+                            ? { filter: 'invert(1) brightness(0) saturate(100%)' }
                             : undefined
                         }
                       />

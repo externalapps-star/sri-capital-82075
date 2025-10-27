@@ -1,24 +1,9 @@
-import heroInvestment from "@/assets/hero-investment.png";
-
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-6 py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
-      
-      {/* Animated Investment Visual */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-30">
-        <img 
-          src={heroInvestment} 
-          alt="Investment Network" 
-          className="w-full h-full object-cover animate-float"
-          style={{ 
-            mixBlendMode: 'screen',
-          }}
-        />
-      </div>
-      
-      <div className="absolute top-20 right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-20 right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight animate-fade-in">

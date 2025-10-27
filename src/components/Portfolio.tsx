@@ -2,14 +2,14 @@ import fakespotLogo from "@/assets/logos/fakespot.png";
 import edgetensorLogo from "@/assets/logos/edgetensor.png";
 import ezdubsLogo from "@/assets/logos/ezdubs.png";
 import softwearLogo from "@/assets/logos/softwear-automation.png";
-import xookLogo from "@/assets/logos/xook.jpg";
+import xookLogo from "@/assets/logos/xook.png";
 import dreamvuLogo from "@/assets/logos/dreamvu.png";
-import phenomLogo from "@/assets/logos/phenom.webp";
+import phenomLogo from "@/assets/logos/phenom.png";
 import beroeLogo from "@/assets/logos/beroe.svg";
-import yellowdigLogo from "@/assets/logos/yellowdig.jpg";
-import healthifyLogo from "@/assets/logos/healthifyme.jpg";
-import cureskinLogo from "@/assets/logos/cureskin.jpg";
-import initoLogo from "@/assets/logos/inito.jpg";
+import yellowdigLogo from "@/assets/logos/yellowdig.png";
+import healthifyLogo from "@/assets/logos/healthifyme.png";
+import cureskinLogo from "@/assets/logos/cureskin.png";
+import initoLogo from "@/assets/logos/inito.png";
 
 type Company = {
   name: string;

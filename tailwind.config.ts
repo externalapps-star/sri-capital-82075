@@ -84,6 +84,14 @@ export default {
             height: "0",
           },
         },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0) scale(1.1)",
+          },
+          "50%": {
+            transform: "translateY(-20px) scale(1.15)",
+          },
+        },
         "us-flag": {
           "0%, 100%": {
             backgroundPosition: "0% 50%",
@@ -104,6 +112,7 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 6s ease-in-out infinite",
         "us-flag": "us-flag 3s ease-in-out infinite",
         "india-flag": "india-flag 3s ease-in-out infinite",
       },

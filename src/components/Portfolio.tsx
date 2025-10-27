@@ -87,7 +87,7 @@ const Portfolio = () => {
                       <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="max-w-full max-h-16 object-contain filter brightness-0 dark:brightness-100 dark:invert opacity-60 group-hover/logo:opacity-100 transition-opacity duration-300"
+                        className="max-w-full max-h-16 object-contain opacity-80 group-hover/logo:opacity-100 transition-opacity duration-300"
                       />
                     ) : (
                       <span className="font-sans text-base font-medium text-center text-muted-foreground group-hover/logo:text-foreground transition-colors">

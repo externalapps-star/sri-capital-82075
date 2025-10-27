@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between relative">
           <button 
             onClick={() => scrollToSection("home")}
             className="text-2xl font-serif font-semibold tracking-tight hover:opacity-70 transition-opacity"
@@ -23,9 +23,9 @@ const Header = () => {
             SRI CAPITAL
           </button>
 
-          {/* Center Tagline - Hidden on mobile */}
-          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2">
-            <p className="font-sans text-sm text-muted-foreground italic">
+          {/* Center Tagline */}
+          <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <p className="font-sans text-sm text-muted-foreground italic whitespace-nowrap">
               Investing in the Future of Technology
             </p>
           </div>

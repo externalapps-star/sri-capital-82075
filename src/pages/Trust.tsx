@@ -20,7 +20,7 @@ const Trust = () => {
       {/* Hero Section */}
       <section 
         className="relative pt-32 pb-20 px-4 bg-cover min-h-[60vh] flex items-center"
-        style={{ backgroundImage: `url(${trustHero})`, backgroundPosition: 'calc(60% + 30px) center' }}
+        style={{ backgroundImage: `url(${trustHero})`, backgroundPosition: 'calc(70% + 40px) center' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/50 to-background/40" />
         <div className="container mx-auto max-w-4xl text-center relative z-10">

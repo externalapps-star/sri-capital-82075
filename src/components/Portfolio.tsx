@@ -93,9 +93,11 @@ const Portfolio = () => {
                         className="max-w-full max-h-20 object-contain opacity-90 group-hover/logo:opacity-100 transition-opacity duration-300"
                       />
                     )}
-                    <span className="font-sans text-sm font-medium text-center text-muted-foreground group-hover/logo:text-foreground transition-colors">
-                      {company.name}
-                    </span>
+                    {company.name === "EZDubs" && (
+                      <span className="font-sans text-sm font-medium text-center text-muted-foreground group-hover/logo:text-foreground transition-colors">
+                        {company.name}
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>

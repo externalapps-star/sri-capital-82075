@@ -22,7 +22,7 @@ const Trust = () => {
         className="relative pt-32 pb-20 px-4 bg-cover bg-center min-h-[60vh] flex items-center"
         style={{ backgroundImage: `url(${trustHero})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/50 to-background/40" />
         <div className="container mx-auto max-w-4xl text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Giving our children a better life

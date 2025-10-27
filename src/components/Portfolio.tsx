@@ -1,6 +1,6 @@
 import fakespotLogo from "@/assets/logos/fakespot.png";
 import edgetensorLogo from "@/assets/logos/edgetensor.png";
-import ezdubsLogo from "@/assets/logos/ezdubs.png";
+import ezdubsLogo from "@/assets/logos/ezdubs-new.png";
 import softwearLogo from "@/assets/logos/softwear-automation.png";
 import xookLogo from "@/assets/logos/xook.png";
 import dreamvuLogo from "@/assets/logos/dreamvu.png";
@@ -84,19 +84,18 @@ const Portfolio = () => {
                 {category.companies.map((company, companyIndex) => (
                   <div
                     key={companyIndex}
-                    className="flex items-center justify-center p-6 rounded-lg bg-background/50 hover:bg-background transition-all duration-300 hover:scale-105 min-h-[120px] group/logo"
+                    className="flex flex-col items-center justify-center p-6 rounded-lg bg-background/50 hover:bg-background transition-all duration-300 hover:scale-105 min-h-[120px] group/logo gap-3"
                   >
-                    {company.logo ? (
+                    {company.logo && (
                       <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="max-w-full max-h-24 object-contain opacity-80 group-hover/logo:opacity-100 transition-opacity duration-300"
+                        className="max-w-full max-h-20 object-contain opacity-90 group-hover/logo:opacity-100 transition-opacity duration-300"
                       />
-                    ) : (
-                      <span className="font-sans text-base font-medium text-center text-muted-foreground group-hover/logo:text-foreground transition-colors">
-                        {company.name}
-                      </span>
                     )}
+                    <span className="font-sans text-sm font-medium text-center text-muted-foreground group-hover/logo:text-foreground transition-colors">
+                      {company.name}
+                    </span>
                   </div>
                 ))}
               </div>

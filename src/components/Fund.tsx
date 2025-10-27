@@ -1,6 +1,6 @@
 import { useState } from "react";
 import sashiReddiImage from "@/assets/sashi-reddi.png";
-import docParghiImage from "@/assets/doc-parghi.jpg";
+import docParghiImage from "@/assets/doc-parghi.png";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 

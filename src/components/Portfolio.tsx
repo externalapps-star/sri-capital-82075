@@ -81,11 +81,15 @@ const Portfolio = () => {
               </h3>
               
               <div className="grid grid-cols-3 gap-6 relative z-10">
-                {category.companies.map((company, companyIndex) => (
-                  <div
-                    key={companyIndex}
-                    className="flex items-center justify-center p-8 rounded-lg bg-white hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo"
-                  >
+                {category.companies.map((company, companyIndex) => {
+                  const animations = ['animate-fade-scale-in', 'animate-slide-up', 'animate-rotate-in'];
+                  const delays = ['delay-0', 'delay-100', 'delay-200'];
+                  return (
+                    <div
+                      key={companyIndex}
+                      className={`flex items-center justify-center p-8 rounded-lg bg-white hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo ${animations[companyIndex % 3]} ${delays[companyIndex]}`}
+                      style={{ animationFillMode: 'both' }}
+                    >
                     {company.logo && (
                       <img
                         src={company.logo}
@@ -104,8 +108,9 @@ const Portfolio = () => {
                         }
                       />
                     )}
-                  </div>
-                ))}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           ))}

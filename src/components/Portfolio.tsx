@@ -1,8 +1,11 @@
 import fakespotLogo from "@/assets/logos/fakespot.png";
 import edgetensorLogo from "@/assets/logos/edgetensor.png";
+import ezdubsLogo from "@/assets/logos/ezdubs.png";
 import softwearLogo from "@/assets/logos/softwear-automation.png";
 import xookLogo from "@/assets/logos/xook.jpg";
+import dreamvuLogo from "@/assets/logos/dreamvu.png";
 import phenomLogo from "@/assets/logos/phenom.webp";
+import beroeLogo from "@/assets/logos/beroe.svg";
 import yellowdigLogo from "@/assets/logos/yellowdig.jpg";
 import healthifyLogo from "@/assets/logos/healthifyme.jpg";
 import cureskinLogo from "@/assets/logos/cureskin.jpg";
@@ -18,7 +21,7 @@ const portfolioCategories = [
     title: "Artificial Intelligence",
     companies: [
       { name: "Fakespot", logo: fakespotLogo },
-      { name: "EZDubs" },
+      { name: "EZDubs", logo: ezdubsLogo },
       { name: "Edgetensor", logo: edgetensorLogo },
     ] as Company[],
     color: "from-blue-500/20 to-purple-500/20",
@@ -28,7 +31,7 @@ const portfolioCategories = [
     companies: [
       { name: "Softwear Automation", logo: softwearLogo },
       { name: "Xook", logo: xookLogo },
-      { name: "DreamVu" },
+      { name: "DreamVu", logo: dreamvuLogo },
     ] as Company[],
     color: "from-cyan-500/20 to-blue-500/20",
   },
@@ -36,7 +39,7 @@ const portfolioCategories = [
     title: "Enterprise Software",
     companies: [
       { name: "Phenom People", logo: phenomLogo },
-      { name: "Beroe" },
+      { name: "Beroe", logo: beroeLogo },
       { name: "Yellowdig", logo: yellowdigLogo },
     ] as Company[],
     color: "from-orange-500/20 to-red-500/20",
@@ -81,13 +84,13 @@ const Portfolio = () => {
                 {category.companies.map((company, companyIndex) => (
                   <div
                     key={companyIndex}
-                    className="flex items-center justify-center p-6 rounded-lg bg-background/50 hover:bg-background transition-all duration-300 hover:scale-105 min-h-[100px] group/logo"
+                    className="flex items-center justify-center p-6 rounded-lg bg-background/50 hover:bg-background transition-all duration-300 hover:scale-105 min-h-[120px] group/logo"
                   >
                     {company.logo ? (
                       <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="max-w-full max-h-16 object-contain opacity-80 group-hover/logo:opacity-100 transition-opacity duration-300"
+                        className="max-w-full max-h-24 object-contain opacity-80 group-hover/logo:opacity-100 transition-opacity duration-300"
                       />
                     ) : (
                       <span className="font-sans text-base font-medium text-center text-muted-foreground group-hover/logo:text-foreground transition-colors">

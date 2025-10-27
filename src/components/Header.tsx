@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -12,12 +14,17 @@ const Header = () => {
     }
   };
 
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between relative">
           <button 
-            onClick={() => scrollToSection("home")}
+            onClick={() => handleNavigation("/")}
             className="text-2xl font-serif font-semibold tracking-tight hover:opacity-70 transition-opacity"
           >
             SRI CAPITAL
@@ -49,6 +56,12 @@ const Header = () => {
               className="text-sm font-sans hover:text-accent transition-colors"
             >
               The Fund
+            </button>
+            <button
+              onClick={() => handleNavigation("/trust")}
+              className="text-sm font-sans hover:text-accent transition-colors"
+            >
+              SRI TRUST
             </button>
           </nav>
 
@@ -82,6 +95,12 @@ const Header = () => {
               className="text-left text-sm font-sans hover:text-accent transition-colors"
             >
               The Fund
+            </button>
+            <button
+              onClick={() => handleNavigation("/trust")}
+              className="text-left text-sm font-sans hover:text-accent transition-colors"
+            >
+              SRI TRUST
             </button>
           </nav>
         )}

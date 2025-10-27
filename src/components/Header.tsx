@@ -25,7 +25,7 @@ const Header = () => {
 
           {/* Center Tagline */}
           <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <p className="font-sans text-sm text-muted-foreground italic whitespace-nowrap">
+            <p className="font-serif text-sm font-bold whitespace-nowrap bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Investing in the Future of Technology
             </p>
           </div>

@@ -4,6 +4,7 @@ import FocusAreas from "@/components/FocusAreas";
 import Portfolio from "@/components/Portfolio";
 import Fund from "@/components/Fund";
 import Footer from "@/components/Footer";
+import FloatingEmailButton from "@/components/FloatingEmailButton";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
         <Fund />
       </main>
       <Footer />
+      <FloatingEmailButton />
     </div>
   );
 };

@@ -93,9 +93,7 @@ const Portfolio = () => {
                         className={`object-contain transition-opacity duration-300 ${
                           company.name === 'EZDubs' 
                             ? 'max-w-[70%] max-h-[70%]'
-                            : company.name === 'Edgetensor'
-                            ? 'max-w-full max-h-full'
-                            : 'max-w-[150%] max-h-[150%]'
+                            : 'max-w-[200%] max-h-[200%]'
                         }`}
                         style={
                           company.name === 'Softwear Automation' || company.name === 'DreamVu'

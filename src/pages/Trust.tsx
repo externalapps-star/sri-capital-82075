@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { MapPin, Mail } from "lucide-react";
 import eduIcon from "@/assets/edu-icon.png";
 import healthIcon from "@/assets/health-icon.png";
+import trustHero from "@/assets/trust-hero.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -17,16 +18,17 @@ const Trust = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+      <section 
+        className="relative pt-32 pb-20 px-4 bg-cover bg-center min-h-[60vh] flex items-center"
+        style={{ backgroundImage: `url(${trustHero})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
+        <div className="container mx-auto max-w-4xl text-center relative z-10">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Giving our children a better life
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+          <p className="text-2xl md:text-3xl text-foreground font-medium">
             Every small step helps
-          </p>
-          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            SRI Trust aims to improve the lives of poor children by supporting their education and health needs.
           </p>
         </div>
       </section>
@@ -34,6 +36,11 @@ const Trust = () => {
       {/* Education & Health Section */}
       <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <p className="text-2xl md:text-3xl text-foreground/90 max-w-4xl mx-auto leading-relaxed">
+              SRI Trust aims to improve the lives of poor children by supporting their education and health needs.
+            </p>
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-2 hover:shadow-lg transition-all duration-300">
               <CardHeader className="text-center">

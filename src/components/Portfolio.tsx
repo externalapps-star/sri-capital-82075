@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import fakespotLogo from "@/assets/logos/fakespot.png";
 import edgetensorLogo from "@/assets/logos/edgetensor.png";
 import ezdubsLogo from "@/assets/logos/ezdubs-new.png";
@@ -56,8 +57,32 @@ const portfolioCategories = [
 ];
 
 const Portfolio = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section id="portfolio" className="py-32 px-6 bg-card/50">
+    <section ref={sectionRef} id="portfolio" className="py-32 px-6 bg-card/50">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-20">
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
@@ -84,7 +109,13 @@ const Portfolio = () => {
                 {category.companies.map((company, companyIndex) => (
                   <div
                     key={companyIndex}
-                    className="flex items-center justify-center p-8 rounded-lg bg-white hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo"
+                    className={`flex items-center justify-center p-8 rounded-lg bg-white hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo ${
+                      isVisible ? 'animate-flip-in' : 'opacity-0'
+                    }`}
+                    style={{
+                      animationDelay: `${companyIndex * 100}ms`,
+                      perspective: '1000px',
+                    }}
                   >
                     {company.logo && (
                       <img

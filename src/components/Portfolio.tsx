@@ -93,7 +93,7 @@ const Portfolio = () => {
                         className={`object-contain transition-opacity duration-300 ${
                           company.name === 'EZDubs' 
                             ? 'max-w-[70%] max-h-[70%]' 
-                            : 'max-w-[85%] max-h-[85%]'
+                            : 'max-w-full max-h-full'
                         }`}
                         style={{ filter: 'brightness(0) saturate(100%)' }}
                       />

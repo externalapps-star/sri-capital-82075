@@ -84,19 +84,15 @@ const Portfolio = () => {
                 {category.companies.map((company, companyIndex) => (
                   <div
                     key={companyIndex}
-                    className="flex flex-col items-center justify-center p-8 rounded-lg bg-white/95 hover:bg-white transition-all duration-300 hover:scale-105 min-h-[140px] group/logo gap-3"
+                    className="flex items-center justify-center p-8 rounded-lg bg-white hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo"
                   >
                     {company.logo && (
                       <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="max-w-full max-h-28 object-contain opacity-90 group-hover/logo:opacity-100 transition-opacity duration-300"
+                        className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                        style={{ filter: 'brightness(0) saturate(100%)' }}
                       />
-                    )}
-                    {company.name === "EZDubs" && (
-                      <span className="font-sans text-sm font-medium text-center text-muted-foreground group-hover/logo:text-foreground transition-colors">
-                        {company.name}
-                      </span>
                     )}
                   </div>
                 ))}

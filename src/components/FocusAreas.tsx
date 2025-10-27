@@ -28,33 +28,35 @@ const focusAreas = [
 
 const FocusAreas = () => {
   return (
-    <section id="focus" className="py-24 px-6">
+    <section id="focus" className="py-32 px-6">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-4">
+        <div className="text-center mb-20">
+          <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Investment Focus
           </h2>
-          <p className="font-sans text-lg text-muted-foreground">
+          <p className="font-sans text-xl text-muted-foreground max-w-2xl mx-auto">
             We partner with visionary founders building the future of technology
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {focusAreas.map((area, index) => (
             <div
               key={index}
-              className="group relative aspect-square overflow-hidden bg-card hover:shadow-2xl transition-shadow duration-500"
+              className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,174,255,0.15)]"
             >
-              <img
-                src={area.image}
-                alt={area.title}
-                className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-30 transition-opacity duration-500"
-              />
-              <div className="relative h-full p-8 md:p-12 flex flex-col justify-end">
-                <h3 className="font-serif text-3xl md:text-4xl font-semibold mb-4">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={area.image}
+                  alt={area.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="font-serif text-3xl font-bold mb-4 group-hover:text-primary transition-colors">
                   {area.title}
                 </h3>
-                <p className="font-sans text-base md:text-lg text-foreground/90 leading-relaxed">
+                <p className="font-sans text-lg text-muted-foreground leading-relaxed">
                   {area.description}
                 </p>
               </div>

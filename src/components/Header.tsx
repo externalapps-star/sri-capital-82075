@@ -57,12 +57,14 @@ const Header = () => {
             >
               The Fund
             </button>
-            <button
-              onClick={() => handleNavigation("/trust")}
+            <a
+              href="http://sritrust.org/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-sans hover:text-accent transition-colors"
             >
               SRI TRUST
-            </button>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -96,12 +98,14 @@ const Header = () => {
             >
               The Fund
             </button>
-            <button
-              onClick={() => handleNavigation("/trust")}
+            <a
+              href="http://sritrust.org/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-left text-sm font-sans hover:text-accent transition-colors"
             >
               SRI TRUST
-            </button>
+            </a>
           </nav>
         )}
       </div>

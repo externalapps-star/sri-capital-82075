@@ -43,7 +43,7 @@ const FocusAreas = () => {
           {focusAreas.map((area, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl h-[280px] border-2 border-border/40 hover:border-primary/50 transition-all duration-500 hover:shadow-lg"
+              className="group relative overflow-hidden rounded-2xl h-[278px] border-2 border-border/40 hover:border-primary/50 transition-all duration-500 hover:shadow-lg"
             >
               {/* Background Image with Subtle Fade */}
               <div className="absolute inset-0">
@@ -58,10 +58,10 @@ const FocusAreas = () => {
               
               {/* Text Overlay */}
               <div className="relative h-full flex flex-col justify-center items-center text-center p-6">
-                <h3 className="font-serif text-3xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent whitespace-nowrap">
+                <h3 className="font-serif text-[32px] font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent whitespace-nowrap">
                   {area.title}
                 </h3>
-                <p className="font-sans text-base text-foreground/90 dark:text-foreground/85 leading-relaxed max-w-md">
+                <p className="font-sans text-lg text-foreground/90 dark:text-foreground/85 leading-relaxed max-w-md">
                   {area.description}
                 </p>
               </div>

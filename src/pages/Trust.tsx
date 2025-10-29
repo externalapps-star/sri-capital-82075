@@ -74,7 +74,7 @@ const Trust = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section id="about" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">About Us</h2>
           <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
@@ -92,7 +92,7 @@ const Trust = () => {
       </section>
 
       {/* Schools Section */}
-      <section className="py-20 px-4 bg-background">
+      <section id="schools" className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Schools Adopted</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -151,7 +151,7 @@ const Trust = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section id="gallery" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -172,7 +172,7 @@ const Trust = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-4 bg-background">
+      <section id="contact" className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Contact Us</h2>
           <Card className="max-w-2xl mx-auto">

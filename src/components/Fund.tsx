@@ -38,11 +38,11 @@ const Fund = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {teamMembers.map((member) => (
               <div key={member.name} className="group text-center">
-                <div className="overflow-hidden rounded-2xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-500 mb-6 max-w-xs mx-auto">
+                <div className="overflow-hidden rounded-2xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-500 mb-6 w-[400px] h-[400px] mx-auto">
                   <img 
                     src={member.image} 
                     alt={`${member.name}, ${member.title} at SRI Capital`}
-                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <h4 className="font-serif text-2xl font-bold mb-2 group-hover:text-primary transition-colors">

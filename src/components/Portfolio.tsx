@@ -84,9 +84,9 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="portfolio" className="py-32 px-6 bg-card/50">
+    <section ref={sectionRef} id="portfolio" className="py-16 px-6 bg-card/50">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Portfolio
           </h2>
@@ -95,19 +95,19 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {portfolioCategories.map((category, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,174,255,0.15)] p-10"
+              className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,174,255,0.15)] p-6"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <h3 className="font-serif text-2xl font-bold mb-8 relative z-10 text-muted-foreground">
+              <h3 className="font-serif text-2xl font-bold mb-6 relative z-10 text-muted-foreground">
                 {category.title}
               </h3>
               
-              <div className="grid grid-cols-3 gap-6 relative z-10">
+              <div className="grid grid-cols-3 gap-4 relative z-10">
                 {category.companies.map((company, companyIndex) => (
                   <div
                     key={companyIndex}

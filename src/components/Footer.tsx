@@ -7,9 +7,9 @@ const scrollToSection = (id: string) => {
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border py-10 px-6 bg-card/30">
+    <footer className="border-t border-border py-8 px-6 bg-card/30">
       <div className="container mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Brand Section */}
           <div>
             <div className="font-serif text-2xl font-semibold mb-3">
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         
         {/* Copyright */}
-        <div className="pt-6 border-t border-border/50">
+        <div className="pt-4 border-t border-border/50">
           <p className="font-sans text-sm text-muted-foreground text-center">
             © 2025 SRI Capital. All rights reserved.
           </p>

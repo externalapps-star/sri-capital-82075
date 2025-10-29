@@ -38,13 +38,13 @@ Doc has serves on The Technology Investment Advisory Committee at Ben Franklin T
   };
 
   return (
-    <section id="fund" className="py-32 px-6">
+    <section id="fund" className="py-16 px-6">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="font-serif text-5xl md:text-6xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h2 className="font-serif text-5xl md:text-6xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           The Fund
         </h2>
         
-        <div className="space-y-8 mb-20">
+        <div className="space-y-6 mb-12">
           <p className="font-sans text-xl leading-relaxed text-muted-foreground text-center max-w-3xl mx-auto">
             SRI Capital Fund I has been investing in early-stage technology companies across the US 
             and India since 2018. We provide not just capital, but strategic guidance and network access 
@@ -52,9 +52,9 @@ Doc has serves on The Technology Investment Advisory Committee at Ben Franklin T
           </p>
         </div>
 
-        <div className="border-t border-border/50 pt-16">
-          <h3 className="font-serif text-4xl font-bold mb-12 text-center">Team</h3>
-          <div className="space-y-16">
+        <div className="border-t border-border/50 pt-10">
+          <h3 className="font-serif text-4xl font-bold mb-8 text-center">Team</h3>
+          <div className="space-y-12">
             {/* Sashi Reddi */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
               <div className="group">

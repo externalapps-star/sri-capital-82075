@@ -28,9 +28,9 @@ const focusAreas = [
 
 const FocusAreas = () => {
   return (
-    <section id="focus" className="py-20 px-6">
+    <section id="focus" className="py-12 px-6">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Investment Focus
           </h2>

@@ -28,35 +28,34 @@ const focusAreas = [
 
 const FocusAreas = () => {
   return (
-    <section id="focus" className="py-32 px-6">
+    <section id="focus" className="py-16 px-6">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-20">
-          <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <div className="text-center mb-12">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
             Investment Focus
           </h2>
-          <p className="font-sans text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
             We partner with visionary founders building the future of technology
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {focusAreas.map((area, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,174,255,0.15)]"
+              className="group relative overflow-hidden rounded-lg h-[400px]"
             >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={area.image}
-                  alt={area.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="font-serif text-3xl font-bold mb-4 group-hover:text-primary transition-colors">
+              <img
+                src={area.image}
+                alt={area.title}
+                className="absolute inset-0 w-full h-full object-cover opacity-30 transition-opacity duration-500 group-hover:opacity-40"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background/60" />
+              <div className="relative h-full flex flex-col justify-center p-10">
+                <h3 className="font-serif text-4xl font-bold mb-3">
                   {area.title}
                 </h3>
-                <p className="font-sans text-lg text-muted-foreground leading-relaxed">
+                <p className="font-sans text-base text-muted-foreground leading-relaxed max-w-lg">
                   {area.description}
                 </p>
               </div>

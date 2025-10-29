@@ -1,13 +1,11 @@
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 py-24 relative overflow-hidden">
+    <section id="home" className="min-h-[85vh] flex items-center justify-center px-6 py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
-      <div className="absolute top-20 right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto max-w-5xl text-center relative z-10">
-        <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight animate-fade-in">
-          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+        <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <span className="text-foreground">
             Early Stage{" "}
           </span>
           <span 
@@ -16,7 +14,7 @@ const Hero = () => {
           >
             US
           </span>
-          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+          <span className="text-foreground">
             -
           </span>
           <span 
@@ -25,11 +23,11 @@ const Hero = () => {
           >
             India
           </span>
-          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+          <span className="text-foreground">
             {" "}Investors
           </span>
         </h1>
-        <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        <p className="font-sans text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
           We invest in transformative companies at the intersection of artificial intelligence, 
           robotics, and enterprise software, bridging innovation across the United States and India.
         </p>

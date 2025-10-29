@@ -15,44 +15,41 @@ import initoLogo from "@/assets/logos/inito.png";
 type Company = {
   name: string;
   logo?: string;
+  url?: string;
 };
 
 const portfolioCategories = [
   {
     title: "Artificial Intelligence",
     companies: [
-      { name: "Fakespot", logo: fakespotLogo },
-      { name: "EZDubs", logo: ezdubsLogo },
-      { name: "Edgetensor", logo: edgetensorLogo },
+      { name: "Fakespot", logo: fakespotLogo, url: "https://www.fakespot.com/" },
+      { name: "EZDubs", logo: ezdubsLogo, url: "https://www.ezdubs.ai/" },
+      { name: "Edgetensor", logo: edgetensorLogo, url: "https://edgetensor.ai/" },
     ] as Company[],
-    color: "from-blue-500/20 to-purple-500/20",
   },
   {
     title: "Robotics",
     companies: [
-      { name: "Softwear Automation", logo: softwearLogo },
-      { name: "Xook", logo: xookLogo },
-      { name: "DreamVu", logo: dreamvuLogo },
+      { name: "Softwear Automation", logo: softwearLogo, url: "https://www.softwearautomation.com/" },
+      { name: "Xook", logo: xookLogo, url: "https://www.xook.ai/" },
+      { name: "DreamVu", logo: dreamvuLogo, url: "https://www.dreamvu.com/" },
     ] as Company[],
-    color: "from-cyan-500/20 to-blue-500/20",
   },
   {
     title: "Enterprise Software",
     companies: [
-      { name: "Phenom People", logo: phenomLogo },
-      { name: "Beroe", logo: beroeLogo },
-      { name: "Yellowdig", logo: yellowdigLogo },
+      { name: "Phenom People", logo: phenomLogo, url: "https://www.phenom.com/" },
+      { name: "Beroe", logo: beroeLogo, url: "https://www.beroeinc.com/" },
+      { name: "Yellowdig", logo: yellowdigLogo, url: "https://www.yellowdig.co/" },
     ] as Company[],
-    color: "from-orange-500/20 to-red-500/20",
   },
   {
     title: "Digital Health",
     companies: [
-      { name: "HealthifyMe", logo: healthifyLogo },
-      { name: "Cureskin", logo: cureskinLogo },
-      { name: "Inito", logo: initoLogo },
+      { name: "HealthifyMe", logo: healthifyLogo, url: "https://www.healthifyme.com/" },
+      { name: "Cureskin", logo: cureskinLogo, url: "https://cureskin.com/" },
+      { name: "Inito", logo: initoLogo, url: "https://www.inito.com/" },
     ] as Company[],
-    color: "from-green-500/20 to-teal-500/20",
   },
 ];
 
@@ -84,34 +81,35 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="portfolio" className="py-32 px-6 bg-card/50">
+    <section ref={sectionRef} id="portfolio" className="py-16 px-6 bg-card/50">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-20">
-          <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+        <div className="text-center mb-12">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
             Portfolio
           </h2>
-          <p className="font-sans text-xl text-muted-foreground">
+          <p className="font-sans text-lg text-muted-foreground">
             We have invested in over 50 companies across our focus areas
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {portfolioCategories.map((category, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,174,255,0.15)] p-10"
+              className="group relative overflow-hidden rounded-lg bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 p-8"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <h3 className="font-serif text-2xl font-bold mb-8 relative z-10 text-muted-foreground">
+              <h3 className="font-serif text-xl font-bold mb-6 text-muted-foreground">
                 {category.title}
               </h3>
               
-              <div className="grid grid-cols-3 gap-6 relative z-10">
+              <div className="grid grid-cols-3 gap-4">
                 {category.companies.map((company, companyIndex) => (
-                  <div
+                  <a
                     key={companyIndex}
-                    className={`flex items-center justify-center p-8 rounded-lg bg-white hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo ${
+                    href={company.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center p-6 rounded-lg bg-white hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square ${
                       isVisible ? 'animate-flip-in' : ''
                     }`}
                     style={{
@@ -137,7 +135,7 @@ const Portfolio = () => {
                         }
                       />
                     )}
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>

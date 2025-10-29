@@ -15,42 +15,43 @@ import initoLogo from "@/assets/logos/inito.png";
 type Company = {
   name: string;
   logo?: string;
+  url: string;
 };
 
 const portfolioCategories = [
   {
     title: "Artificial Intelligence",
     companies: [
-      { name: "Fakespot", logo: fakespotLogo },
-      { name: "EZDubs", logo: ezdubsLogo },
-      { name: "Edgetensor", logo: edgetensorLogo },
+      { name: "Fakespot", logo: fakespotLogo, url: "https://blog.mozilla.org/en/mozilla/building-whats-next/" },
+      { name: "EZDubs", logo: ezdubsLogo, url: "https://ezdubs.ai/" },
+      { name: "Edgetensor", logo: edgetensorLogo, url: "https://edgetensor.ai/" },
     ] as Company[],
     color: "from-blue-500/20 to-purple-500/20",
   },
   {
     title: "Robotics",
     companies: [
-      { name: "Softwear Automation", logo: softwearLogo },
-      { name: "Xook", logo: xookLogo },
-      { name: "DreamVu", logo: dreamvuLogo },
+      { name: "Softwear Automation", logo: softwearLogo, url: "https://softwearautomation.com/" },
+      { name: "Xook", logo: xookLogo, url: "https://xook.ai/" },
+      { name: "DreamVu", logo: dreamvuLogo, url: "https://dreamvu.com/" },
     ] as Company[],
     color: "from-cyan-500/20 to-blue-500/20",
   },
   {
     title: "Enterprise Software",
     companies: [
-      { name: "Phenom People", logo: phenomLogo },
-      { name: "Beroe", logo: beroeLogo },
-      { name: "Yellowdig", logo: yellowdigLogo },
+      { name: "Phenom People", logo: phenomLogo, url: "https://www.phenom.com/" },
+      { name: "Beroe", logo: beroeLogo, url: "https://www.beroeinc.com/beroe-live-ai" },
+      { name: "Yellowdig", logo: yellowdigLogo, url: "https://yellowdig.co/" },
     ] as Company[],
     color: "from-orange-500/20 to-red-500/20",
   },
   {
     title: "Digital Health",
     companies: [
-      { name: "HealthifyMe", logo: healthifyLogo },
-      { name: "Cureskin", logo: cureskinLogo },
-      { name: "Inito", logo: initoLogo },
+      { name: "HealthifyMe", logo: healthifyLogo, url: "https://www.healthifyme.com/in/" },
+      { name: "Cureskin", logo: cureskinLogo, url: "https://cureskin.com/" },
+      { name: "Inito", logo: initoLogo, url: "https://www.inito.com/" },
     ] as Company[],
     color: "from-green-500/20 to-teal-500/20",
   },
@@ -109,9 +110,12 @@ const Portfolio = () => {
               
               <div className="grid grid-cols-3 gap-4 relative z-10">
                 {category.companies.map((company, companyIndex) => (
-                  <div
+                  <a
                     key={companyIndex}
-                    className={`flex items-center justify-center p-[30px] rounded-lg bg-white dark:bg-white border border-gray-200 dark:border-transparent hover:bg-white/95 dark:hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo ${
+                    href={company.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center p-[30px] rounded-lg bg-white dark:bg-white border border-gray-200 dark:border-transparent hover:bg-white/95 dark:hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo cursor-pointer ${
                       isVisible ? 'animate-flip-in' : ''
                     }`}
                     style={{
@@ -137,7 +141,7 @@ const Portfolio = () => {
                         }
                       />
                     )}
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>

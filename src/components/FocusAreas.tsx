@@ -43,7 +43,7 @@ const FocusAreas = () => {
           {focusAreas.map((area, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl h-[240px] border-2 border-border/40 hover:border-primary/50 transition-all duration-500 shadow-lg hover:shadow-xl hover:shadow-primary/20"
+              className="group relative overflow-hidden rounded-2xl h-[240px] border-2 border-border hover:border-primary/60 transition-all duration-500 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.2)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.3)] dark:hover:shadow-[0_20px_50px_rgb(0,0,0,0.4)]"
             >
               {/* Background Image with Subtle Fade */}
               <div className="absolute inset-0">

@@ -124,6 +124,14 @@ export default {
             transform: "translateY(8px)",
           },
         },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-8px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -132,6 +140,7 @@ export default {
         "india-flag": "india-flag 3s ease-in-out infinite",
         "flip-in": "flip-in 1s ease-in-out",
         "scroll-down": "scroll-down 1.5s ease-in-out infinite",
+        "float": "float 2s ease-in-out infinite",
       },
     },
   },

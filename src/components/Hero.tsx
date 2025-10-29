@@ -36,15 +36,17 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <a 
-        href="#focus" 
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 cursor-pointer group"
+      <button
+        onClick={() => {
+          document.getElementById('focus')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 cursor-pointer group animate-float"
         aria-label="Scroll to Investment Focus"
       >
-        <div className="w-7 h-11 border-2 border-primary/50 rounded-full flex items-start justify-center p-2 group-hover:border-primary transition-colors">
-          <div className="w-1 h-2 bg-primary/70 rounded-full animate-scroll-down" />
+        <div className="w-7 h-11 border-2 border-primary/50 rounded-full flex items-start justify-center pt-2 group-hover:border-primary transition-colors">
+          <div className="w-1 h-2 bg-primary/70 rounded-full" />
         </div>
-      </a>
+      </button>
     </section>
   );
 };

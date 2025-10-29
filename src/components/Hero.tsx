@@ -38,7 +38,11 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <button
         onClick={() => {
-          document.getElementById('focus')?.scrollIntoView({ behavior: 'smooth' });
+          const element = document.getElementById('focus');
+          if (element) {
+            const offsetTop = element.offsetTop - 80;
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+          }
         }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 cursor-pointer group animate-float"
         aria-label="Scroll to Investment Focus"

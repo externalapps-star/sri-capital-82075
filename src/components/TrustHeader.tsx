@@ -1,4 +1,3 @@
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { useNavigate } from "react-router-dom";
 
 const scrollToSection = (id: string) => {
@@ -48,8 +47,6 @@ const TrustHeader = () => {
               Contact Us
             </button>
           </nav>
-          
-          <ThemeToggle />
         </div>
       </div>
     </header>

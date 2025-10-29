@@ -87,7 +87,7 @@ const Portfolio = () => {
     <section ref={sectionRef} id="portfolio" className="py-32 px-6 bg-card/50">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-20">
-          <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+          <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 text-foreground">
             Portfolio
           </h2>
           <p className="font-sans text-xl text-muted-foreground">

@@ -36,11 +36,15 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-8 h-12 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-primary/70 rounded-full animate-scroll-down" />
+      <a 
+        href="#focus" 
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 cursor-pointer group"
+        aria-label="Scroll to Investment Focus"
+      >
+        <div className="w-7 h-11 border-2 border-primary/50 rounded-full flex items-start justify-center p-2 group-hover:border-primary transition-colors">
+          <div className="w-1 h-2 bg-primary/70 rounded-full animate-scroll-down" />
         </div>
-      </div>
+      </a>
     </section>
   );
 };

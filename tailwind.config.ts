@@ -116,16 +116,12 @@ export default {
             opacity: "0",
             transform: "translateY(0)",
           },
-          "40%": {
+          "50%": {
             opacity: "1",
-          },
-          "80%": {
-            opacity: "0",
-            transform: "translateY(12px)",
           },
           "100%": {
             opacity: "0",
-            transform: "translateY(0)",
+            transform: "translateY(8px)",
           },
         },
       },
@@ -135,7 +131,7 @@ export default {
         "us-flag": "us-flag 3s ease-in-out infinite",
         "india-flag": "india-flag 3s ease-in-out infinite",
         "flip-in": "flip-in 1s ease-in-out",
-        "scroll-down": "scroll-down 2s ease-in-out infinite",
+        "scroll-down": "scroll-down 1.5s ease-in-out infinite",
       },
     },
   },

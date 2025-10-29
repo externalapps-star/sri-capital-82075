@@ -9,13 +9,13 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import TrustHeader from "@/components/TrustHeader";
+import TrustFooter from "@/components/TrustFooter";
 
 const Trust = () => {
   return (
     <div className="min-h-screen font-sans">
-      <Header />
+      <TrustHeader />
       
       {/* Hero Section */}
       <section 
@@ -207,7 +207,7 @@ const Trust = () => {
         </div>
       </section>
 
-      <Footer />
+      <TrustFooter />
     </div>
   );
 };

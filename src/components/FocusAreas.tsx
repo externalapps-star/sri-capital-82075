@@ -43,20 +43,25 @@ const FocusAreas = () => {
           {focusAreas.map((area, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,174,255,0.15)]"
+              className="group relative overflow-hidden rounded-2xl h-[400px] transition-all duration-500"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              {/* Background Image with Fade */}
+              <div className="absolute inset-0">
                 <img
                   src={area.image}
                   alt={area.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                {/* Dark overlay for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background/90 dark:from-background/85 dark:via-background/75 dark:to-background/95" />
               </div>
-              <div className="p-8">
-                <h3 className="font-serif text-3xl font-bold mb-4 group-hover:text-primary transition-colors">
+              
+              {/* Text Overlay */}
+              <div className="relative h-full flex flex-col justify-center items-center text-center p-8">
+                <h3 className="font-serif text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   {area.title}
                 </h3>
-                <p className="font-sans text-lg text-muted-foreground leading-relaxed">
+                <p className="font-sans text-lg text-foreground/90 dark:text-foreground/80 leading-relaxed max-w-md">
                   {area.description}
                 </p>
               </div>

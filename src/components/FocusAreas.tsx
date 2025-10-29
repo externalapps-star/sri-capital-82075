@@ -58,10 +58,10 @@ const FocusAreas = () => {
               
               {/* Text Overlay */}
               <div className="relative h-full flex flex-col justify-center items-center text-center p-6">
-                <h3 className="font-serif text-2xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                <h3 className="font-serif text-3xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent whitespace-nowrap">
                   {area.title}
                 </h3>
-                <p className="font-sans text-sm text-foreground/90 dark:text-foreground/85 leading-relaxed max-w-md">
+                <p className="font-sans text-base text-foreground/90 dark:text-foreground/85 leading-relaxed max-w-md">
                   {area.description}
                 </p>
               </div>

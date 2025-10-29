@@ -51,7 +51,7 @@ const Footer = () => {
                 The Fund
               </button>
               <a
-                href="http://sritrust.org/"
+                href="/trust"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors text-left"

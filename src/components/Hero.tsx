@@ -6,22 +6,28 @@ const Hero = () => {
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto max-w-5xl text-center relative z-10">
-        <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight animate-fade-in text-foreground">
-          Early Stage{" "}
+        <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight animate-fade-in">
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Early Stage{" "}
+          </span>
           <span 
             className="bg-gradient-to-r from-[#8B1A2A] via-gray-400 to-[#2A2A52] dark:from-[#B22234] dark:via-white dark:to-[#3C3B6E] bg-clip-text text-transparent animate-us-flag"
             style={{ backgroundSize: "200% 200%" }}
           >
             US
           </span>
-          -
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            -
+          </span>
           <span 
             className="bg-gradient-to-r from-[#CC7A29] via-gray-400 to-[#0F6606] dark:from-[#FF9933] dark:via-white dark:to-[#138808] bg-clip-text text-transparent animate-india-flag"
             style={{ backgroundSize: "200% 200%" }}
           >
             India
           </span>
-          {" "}Investors
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            {" "}Investors
+          </span>
         </h1>
         <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
           We invest in transformative companies at the intersection of artificial intelligence, 

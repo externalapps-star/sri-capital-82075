@@ -76,7 +76,7 @@ const Trust = () => {
       {/* About Us Section */}
       <section id="about" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-slate-600 dark:text-slate-400">About Us</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-slate-700 dark:text-slate-300">About Us</h2>
           <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
             <p>
               SRI Trust is the charitable arm of Ashwini and Sashi P. Reddi.

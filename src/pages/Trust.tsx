@@ -94,7 +94,7 @@ const Trust = () => {
       {/* Schools Section */}
       <section id="schools" className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-10">Schools Adopted</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-10 text-slate-700 dark:text-slate-300">Schools Adopted</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
@@ -153,7 +153,7 @@ const Trust = () => {
       {/* Gallery Section */}
       <section id="gallery" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-10">Gallery</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-10 text-slate-700 dark:text-slate-300">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[gallery1, gallery2, gallery3, gallery4, gallery5, gallery6].map((image, index) => (
               <div
@@ -174,7 +174,7 @@ const Trust = () => {
       {/* Contact Section */}
       <section id="contact" className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">Contact Us</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-slate-700 dark:text-slate-300">Contact Us</h2>
           <Card className="max-w-2xl mx-auto">
             <CardHeader>
               <CardTitle className="text-2xl">SRI Charitable Trust</CardTitle>

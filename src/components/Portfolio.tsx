@@ -104,7 +104,7 @@ const Portfolio = () => {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <h3 className="font-serif text-2xl font-bold mb-6 relative z-10">
+              <h3 className="font-serif text-2xl font-bold mb-6 relative z-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 {category.title}
               </h3>
               

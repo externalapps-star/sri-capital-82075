@@ -28,9 +28,9 @@ const focusAreas = [
 
 const FocusAreas = () => {
   return (
-    <section id="focus" className="py-32 px-6">
+    <section id="focus" className="py-20 px-6">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Investment Focus
           </h2>
@@ -39,11 +39,11 @@ const FocusAreas = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {focusAreas.map((area, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl h-[380px] border-2 border-border/40 hover:border-primary/50 transition-all duration-500 hover:shadow-lg"
+              className="group relative overflow-hidden rounded-2xl h-[280px] border-2 border-border/40 hover:border-primary/50 transition-all duration-500 hover:shadow-lg"
             >
               {/* Background Image with Subtle Fade */}
               <div className="absolute inset-0">
@@ -57,11 +57,11 @@ const FocusAreas = () => {
               </div>
               
               {/* Text Overlay */}
-              <div className="relative h-full flex flex-col justify-center items-center text-center p-8">
-                <h3 className="font-serif text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <div className="relative h-full flex flex-col justify-center items-center text-center p-6">
+                <h3 className="font-serif text-2xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   {area.title}
                 </h3>
-                <p className="font-sans text-base text-foreground/90 dark:text-foreground/85 leading-relaxed max-w-md">
+                <p className="font-sans text-sm text-foreground/90 dark:text-foreground/85 leading-relaxed max-w-md">
                   {area.description}
                 </p>
               </div>

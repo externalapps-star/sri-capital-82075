@@ -11,7 +11,7 @@ const Hero = () => {
             Early Stage{" "}
           </span>
           <span 
-            className="bg-gradient-to-r from-[#B22234] via-white to-[#3C3B6E] bg-clip-text text-transparent animate-us-flag"
+            className="bg-gradient-to-r from-[#8B1A2A] via-gray-400 to-[#2A2A52] dark:from-[#B22234] dark:via-white dark:to-[#3C3B6E] bg-clip-text text-transparent animate-us-flag"
             style={{ backgroundSize: "200% 200%" }}
           >
             US
@@ -20,7 +20,7 @@ const Hero = () => {
             -
           </span>
           <span 
-            className="bg-gradient-to-r from-[#FF9933] via-white to-[#138808] bg-clip-text text-transparent animate-india-flag"
+            className="bg-gradient-to-r from-[#CC7A29] via-gray-400 to-[#0F6606] dark:from-[#FF9933] dark:via-white dark:to-[#138808] bg-clip-text text-transparent animate-india-flag"
             style={{ backgroundSize: "200% 200%" }}
           >
             India

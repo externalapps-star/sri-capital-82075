@@ -111,6 +111,23 @@ export default {
             transform: "perspective(1000px) rotateY(0deg)",
           },
         },
+        "scroll-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(0)",
+          },
+          "40%": {
+            opacity: "1",
+          },
+          "80%": {
+            opacity: "0",
+            transform: "translateY(12px)",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -118,6 +135,7 @@ export default {
         "us-flag": "us-flag 3s ease-in-out infinite",
         "india-flag": "india-flag 3s ease-in-out infinite",
         "flip-in": "flip-in 1s ease-in-out",
+        "scroll-down": "scroll-down 2s ease-in-out infinite",
       },
     },
   },

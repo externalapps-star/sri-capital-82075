@@ -38,7 +38,7 @@ const Fund = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {teamMembers.map((member) => (
               <div key={member.name} className="group text-center">
-                <div className="overflow-hidden rounded-2xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-500 mb-6">
+                <div className="overflow-hidden rounded-2xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-500 mb-6 max-w-xs mx-auto">
                   <img 
                     src={member.image} 
                     alt={`${member.name}, ${member.title} at SRI Capital`}

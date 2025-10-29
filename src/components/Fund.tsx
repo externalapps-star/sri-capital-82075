@@ -59,7 +59,7 @@ const Fund = () => {
                   aria-label={`Visit ${member.name}'s LinkedIn profile`}
                 >
                   <Linkedin className="w-5 h-5" />
-                  <span className="font-sans text-sm">LinkedIn Profile</span>
+                  <span className="font-sans text-sm translate-y-[3px]">LinkedIn Profile</span>
                 </a>
               </div>
             ))}

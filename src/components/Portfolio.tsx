@@ -99,7 +99,7 @@ const Portfolio = () => {
           {portfolioCategories.map((category, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-card border-2 border-border hover:border-primary/60 transition-all duration-500 shadow-[0_10px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_0_30px_rgba(0,174,255,0.4),0_25px_60px_rgba(0,0,0,0.35)] dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] dark:hover:shadow-[0_0_30px_rgba(0,174,255,0.5),0_25px_60px_rgba(0,0,0,0.6)] p-[22px]"
+              className="group relative overflow-hidden rounded-2xl bg-card border-2 border-border hover:border-primary/60 transition-all duration-500 shadow-[0_10px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_0_30px_rgba(0,174,255,0.4),0_25px_60px_rgba(0,0,0,0.35)] dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] dark:hover:shadow-[0_0_30px_rgba(0,174,255,0.5),0_25px_60px_rgba(0,0,0,0.6)] p-[21px]"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               

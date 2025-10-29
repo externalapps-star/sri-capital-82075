@@ -53,7 +53,7 @@ const FocusAreas = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 {/* Lighter overlay to show more of the image */}
-                <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background/75 dark:from-background/65 dark:via-background/55 dark:to-background/70" />
+                <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background/90 dark:from-background/65 dark:via-background/55 dark:to-background/70" />
               </div>
               
               {/* Text Overlay */}

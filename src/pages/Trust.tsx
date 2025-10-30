@@ -50,7 +50,7 @@ const Trust = () => {
                 <CardTitle className="text-3xl">Education</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-foreground/80 leading-relaxed text-justify">
                   SRI Trust sponsors three government schools in and around Hyderabad serving a total of 1125 school children (575 boys and 550 girls). We fund teacher salaries, teacher training, books and stationary, as well as other needed improvements to the schools.
                 </p>
               </CardContent>
@@ -64,7 +64,7 @@ const Trust = () => {
                 <CardTitle className="text-3xl">Health</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-foreground/80 leading-relaxed text-justify">
                   SRI Trust provides the children in these three government schools with extra nutrition every day. They also have access to a general health checkup from a qualified pediatrician two times a year.
                 </p>
               </CardContent>
@@ -77,7 +77,7 @@ const Trust = () => {
       <section id="about" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-slate-700 dark:text-slate-300">About Us</h2>
-          <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
+          <div className="space-y-6 text-lg text-foreground/80 leading-relaxed text-justify">
             <p>
               SRI Trust is the charitable arm of Ashwini and Sashi P. Reddi.
             </p>

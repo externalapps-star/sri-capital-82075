@@ -72,23 +72,23 @@ const Header = () => {
                 <Menu size={24} />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[240px]">
-              <nav className="flex flex-col gap-6 mt-8">
+            <SheetContent side="right" className="w-full sm:w-[400px] border-l">
+              <nav className="flex flex-col gap-8 mt-12">
                 <button
                   onClick={() => scrollToSection("focus")}
-                  className="text-left text-sm font-sans hover:text-accent transition-colors"
+                  className="text-left text-lg font-sans hover:text-accent transition-colors py-2"
                 >
                   Focus Areas
                 </button>
                 <button
                   onClick={() => scrollToSection("portfolio")}
-                  className="text-left text-sm font-sans hover:text-accent transition-colors"
+                  className="text-left text-lg font-sans hover:text-accent transition-colors py-2"
                 >
                   Portfolio
                 </button>
                 <button
                   onClick={() => scrollToSection("fund")}
-                  className="text-left text-sm font-sans hover:text-accent transition-colors"
+                  className="text-left text-lg font-sans hover:text-accent transition-colors py-2"
                 >
                   The Fund
                 </button>
@@ -96,7 +96,7 @@ const Header = () => {
                   href="/trust"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-left text-sm font-sans hover:text-accent transition-colors"
+                  className="text-left text-lg font-sans hover:text-accent transition-colors py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   SRI TRUST

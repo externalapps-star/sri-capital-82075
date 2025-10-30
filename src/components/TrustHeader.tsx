@@ -68,29 +68,29 @@ const TrustHeader = () => {
                 <Menu size={24} />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[240px]">
-              <nav className="flex flex-col gap-6 mt-8">
+            <SheetContent side="right" className="w-full sm:w-[400px] border-l">
+              <nav className="flex flex-col gap-8 mt-12">
                 <button
                   onClick={() => handleScrollToSection("about")}
-                  className="text-left font-sans text-sm hover:text-primary transition-colors"
+                  className="text-left font-sans text-lg hover:text-primary transition-colors py-2"
                 >
                   About Us
                 </button>
                 <button
                   onClick={() => handleScrollToSection("schools")}
-                  className="text-left font-sans text-sm hover:text-primary transition-colors"
+                  className="text-left font-sans text-lg hover:text-primary transition-colors py-2"
                 >
                   Schools Adopted
                 </button>
                 <button
                   onClick={() => handleScrollToSection("gallery")}
-                  className="text-left font-sans text-sm hover:text-primary transition-colors"
+                  className="text-left font-sans text-lg hover:text-primary transition-colors py-2"
                 >
                   Gallery
                 </button>
                 <button
                   onClick={() => handleScrollToSection("contact")}
-                  className="text-left font-sans text-sm hover:text-primary transition-colors"
+                  className="text-left font-sans text-lg hover:text-primary transition-colors py-2"
                 >
                   Contact Us
                 </button>

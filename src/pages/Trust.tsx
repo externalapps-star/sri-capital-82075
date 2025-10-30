@@ -50,7 +50,7 @@ const Trust = () => {
                 <CardTitle className="text-3xl">Education</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80 leading-relaxed text-left md:text-justify">
+                <p className="text-foreground/80 leading-relaxed">
                   SRI Trust sponsors three government schools in and around Hyderabad serving a total of 1125 school children (575 boys and 550 girls). We fund teacher salaries, teacher training, books and stationary, as well as other needed improvements to the schools.
                 </p>
               </CardContent>
@@ -64,7 +64,7 @@ const Trust = () => {
                 <CardTitle className="text-3xl">Health</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80 leading-relaxed text-left md:text-justify">
+                <p className="text-foreground/80 leading-relaxed">
                   SRI Trust provides the children in these three government schools with extra nutrition every day. They also have access to a general health checkup from a qualified pediatrician two times a year.
                 </p>
               </CardContent>
@@ -77,7 +77,7 @@ const Trust = () => {
       <section id="about" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-slate-700 dark:text-slate-300">About Us</h2>
-          <div className="space-y-6 text-lg text-foreground/80 leading-relaxed text-left md:text-justify">
+          <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
             <p>
               SRI Trust is the charitable arm of Ashwini and Sashi P. Reddi.
             </p>
@@ -99,7 +99,7 @@ const Trust = () => {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl">Film Nagar School</CardTitle>
-                <CardDescription className="text-sm mt-2">
+                <CardDescription className="text-base mt-2">
                   Govt. Primary School
                 </CardDescription>
               </CardHeader>
@@ -116,7 +116,7 @@ const Trust = () => {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl">Madinaguda School</CardTitle>
-                <CardDescription className="text-sm mt-2">
+                <CardDescription className="text-base mt-2">
                   Mandal Parishad Upper Primary School
                 </CardDescription>
               </CardHeader>
@@ -133,7 +133,7 @@ const Trust = () => {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl">Pragathi Nagar School</CardTitle>
-                <CardDescription className="text-sm mt-2">
+                <CardDescription className="text-base mt-2">
                   Mandal Parishad Primary School
                 </CardDescription>
               </CardHeader>
@@ -184,7 +184,7 @@ const Trust = () => {
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-primary" />
                 <div>
                   <p className="font-medium mb-1">Address</p>
-                  <p className="text-foreground/70 text-sm text-left md:text-justify">
+                  <p className="text-foreground/70 text-sm">
                     C/o Nalam & Associates, 8th Floor, Sanali Spazio, Plot No.19,
                     TSIIC Software Units Layout, Hitech City, Hyderabad 500081
                   </p>

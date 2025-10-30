@@ -14,6 +14,7 @@ import initoLogo from "@/assets/logos/inito.png";
 
 type Company = {
   name: string;
+  displayName: string;
   logo?: string;
   url: string;
 };
@@ -22,36 +23,36 @@ const portfolioCategories = [
   {
     title: "Artificial Intelligence",
     companies: [
-      { name: "Fakespot", logo: fakespotLogo, url: "https://blog.mozilla.org/en/mozilla/building-whats-next/" },
-      { name: "EZDubs", logo: ezdubsLogo, url: "https://ezdubs.ai/" },
-      { name: "Edgetensor", logo: edgetensorLogo, url: "https://edgetensor.ai/" },
+      { name: "Fakespot", displayName: "FAKESPOT (acquired by Mozilla)", logo: fakespotLogo, url: "https://www.mozilla.org/en-US/" },
+      { name: "EZDubs", displayName: "EZDUBS", logo: ezdubsLogo, url: "https://ezdubs.ai/" },
+      { name: "Edgetensor", displayName: "EDGETENSOR", logo: edgetensorLogo, url: "https://edgetensor.ai/" },
     ] as Company[],
     color: "from-blue-500/20 to-purple-500/20",
   },
   {
     title: "Robotics",
     companies: [
-      { name: "Softwear Automation", logo: softwearLogo, url: "https://softwearautomation.com/" },
-      { name: "Xook", logo: xookLogo, url: "https://xook.ai/" },
-      { name: "DreamVu", logo: dreamvuLogo, url: "https://dreamvu.com/" },
+      { name: "Softwear Automation", displayName: "SOFTWEAR AUTOMATION", logo: softwearLogo, url: "https://softwearautomation.com/" },
+      { name: "Xook", displayName: "XOOK", logo: xookLogo, url: "https://xook.ai/" },
+      { name: "DreamVu", displayName: "DREAMVU", logo: dreamvuLogo, url: "https://dreamvu.com/" },
     ] as Company[],
     color: "from-cyan-500/20 to-blue-500/20",
   },
   {
     title: "Enterprise Software",
     companies: [
-      { name: "Phenom People", logo: phenomLogo, url: "https://www.phenom.com/" },
-      { name: "Beroe", logo: beroeLogo, url: "https://www.beroeinc.com/beroe-live-ai" },
-      { name: "Yellowdig", logo: yellowdigLogo, url: "https://yellowdig.co/" },
+      { name: "Phenom People", displayName: "PHENOM", logo: phenomLogo, url: "https://www.phenom.com/" },
+      { name: "Beroe", displayName: "BEROE", logo: beroeLogo, url: "https://www.beroeinc.com/beroe-live-ai" },
+      { name: "Yellowdig", displayName: "YELLOWDIG", logo: yellowdigLogo, url: "https://yellowdig.co/" },
     ] as Company[],
     color: "from-orange-500/20 to-red-500/20",
   },
   {
     title: "Digital Health",
     companies: [
-      { name: "HealthifyMe", logo: healthifyLogo, url: "https://www.healthifyme.com/in/" },
-      { name: "Cureskin", logo: cureskinLogo, url: "https://cureskin.com/" },
-      { name: "Inito", logo: initoLogo, url: "https://www.inito.com/" },
+      { name: "HealthifyMe", displayName: "HEALTHIFYME", logo: healthifyLogo, url: "https://www.healthifyme.com/in/" },
+      { name: "Cureskin", displayName: "CURESKIN", logo: cureskinLogo, url: "https://cureskin.com/" },
+      { name: "Inito", displayName: "INITO", logo: initoLogo, url: "https://www.inito.com/" },
     ] as Company[],
     color: "from-green-500/20 to-teal-500/20",
   },
@@ -110,38 +111,42 @@ const Portfolio = () => {
               
               <div className="grid grid-cols-3 gap-4 relative z-10">
                 {category.companies.map((company, companyIndex) => (
-                  <a
-                    key={companyIndex}
-                    href={company.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center justify-center p-[30px] rounded-lg bg-white dark:bg-white border border-gray-200 dark:border-transparent hover:bg-white/95 dark:hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo cursor-pointer ${
-                      isVisible ? 'animate-flip-in' : ''
-                    }`}
-                    style={{
-                      animationDelay: `${(index * 300) + (companyIndex * 150)}ms`,
-                      transformStyle: 'preserve-3d',
-                    }}
-                  >
-                    {company.logo && (
-                      <img
-                        src={company.logo}
-                        alt={`${company.name} logo`}
-                        className={`object-contain transition-opacity duration-300 ${
-                          company.name === 'EZDubs' 
-                            ? 'max-w-[70%] max-h-[70%]'
-                            : 'max-w-[150%] max-h-[150%]'
-                        }`}
-                        style={
-                          company.name === 'Softwear Automation' || company.name === 'DreamVu'
-                            ? { filter: 'brightness(0) saturate(100%)' }
-                            : company.name === 'Edgetensor'
-                            ? { filter: 'invert(1) brightness(0) saturate(100%)' }
-                            : undefined
-                        }
-                      />
-                    )}
-                  </a>
+                  <div key={companyIndex} className="flex flex-col items-center">
+                    <a
+                      href={company.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center justify-center p-[30px] rounded-lg bg-white dark:bg-white border border-gray-200 dark:border-transparent hover:bg-white/95 dark:hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo cursor-pointer w-full ${
+                        isVisible ? 'animate-flip-in' : ''
+                      }`}
+                      style={{
+                        animationDelay: `${(index * 300) + (companyIndex * 150)}ms`,
+                        transformStyle: 'preserve-3d',
+                      }}
+                    >
+                      {company.logo && (
+                        <img
+                          src={company.logo}
+                          alt={`${company.name} logo`}
+                          className={`object-contain transition-opacity duration-300 ${
+                            company.name === 'EZDubs' 
+                              ? 'max-w-[70%] max-h-[70%]'
+                              : 'max-w-[150%] max-h-[150%]'
+                          }`}
+                          style={
+                            company.name === 'Softwear Automation' || company.name === 'DreamVu'
+                              ? { filter: 'brightness(0) saturate(100%)' }
+                              : company.name === 'Edgetensor'
+                              ? { filter: 'invert(1) brightness(0) saturate(100%)' }
+                              : undefined
+                          }
+                        />
+                      )}
+                    </a>
+                    <p className="font-sans text-sm font-semibold text-foreground/80 mt-3 text-center">
+                      {company.displayName}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>

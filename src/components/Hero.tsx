@@ -47,8 +47,8 @@ const Hero = () => {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 cursor-pointer group animate-float"
         aria-label="Scroll to Investment Focus"
       >
-        <div className="w-7 h-11 border-2 border-primary/50 rounded-full flex items-start justify-center pt-2 group-hover:border-primary transition-colors">
-          <div className="w-1 h-2 bg-primary/70 rounded-full" />
+        <div className="w-7 h-11 border-2 border-white/50 rounded-full flex items-start justify-center pt-2 group-hover:border-white transition-colors">
+          <div className="w-1 h-2 bg-white/70 rounded-full" />
         </div>
       </button>
     </section>

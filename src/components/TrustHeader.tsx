@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const scrollToSection = (id: string) => {
@@ -58,44 +57,47 @@ const TrustHeader = () => {
             </button>
           </nav>
 
-          {/* Mobile Navigation */}
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="md:hidden">
-              <button className="p-2 hover:bg-accent rounded-md transition-colors">
-                <Menu className="h-6 w-6" />
-              </button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[250px] sm:w-[300px]">
-              <nav className="flex flex-col gap-4 mt-8">
-                <button
-                  onClick={() => handleNavClick("about")}
-                  className="font-sans text-base hover:text-primary transition-colors text-left py-2"
-                >
-                  About Us
-                </button>
-                <button
-                  onClick={() => handleNavClick("schools")}
-                  className="font-sans text-base hover:text-primary transition-colors text-left py-2"
-                >
-                  Schools Adopted
-                </button>
-                <button
-                  onClick={() => handleNavClick("gallery")}
-                  className="font-sans text-base hover:text-primary transition-colors text-left py-2"
-                >
-                  Gallery
-                </button>
-                <button
-                  onClick={() => handleNavClick("contact")}
-                  className="font-sans text-base hover:text-primary transition-colors text-left py-2"
-                >
-                  Contact Us
-                </button>
-              </nav>
-            </SheetContent>
-          </Sheet>
+          {/* Mobile Hamburger Menu */}
+          <button 
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 hover:bg-accent rounded-md transition-colors"
+          >
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </div>
+      
+      {/* Mobile Dropdown Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-background border-b border-border">
+          <nav className="container mx-auto max-w-7xl px-6 py-4 flex flex-col gap-2">
+            <button
+              onClick={() => handleNavClick("about")}
+              className="font-sans text-sm hover:text-primary transition-colors text-left py-2 hover:bg-accent rounded px-3"
+            >
+              About Us
+            </button>
+            <button
+              onClick={() => handleNavClick("schools")}
+              className="font-sans text-sm hover:text-primary transition-colors text-left py-2 hover:bg-accent rounded px-3"
+            >
+              Schools Adopted
+            </button>
+            <button
+              onClick={() => handleNavClick("gallery")}
+              className="font-sans text-sm hover:text-primary transition-colors text-left py-2 hover:bg-accent rounded px-3"
+            >
+              Gallery
+            </button>
+            <button
+              onClick={() => handleNavClick("contact")}
+              className="font-sans text-sm hover:text-primary transition-colors text-left py-2 hover:bg-accent rounded px-3"
+            >
+              Contact Us
+            </button>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };

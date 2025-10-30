@@ -32,25 +32,25 @@ const TrustHeader = () => {
           <nav className="hidden md:flex items-center gap-6">
             <button
               onClick={() => scrollToSection("about")}
-              className="font-sans text-sm hover:text-primary transition-colors"
+              className="font-sans text-sm hover:text-white transition-colors"
             >
               About Us
             </button>
             <button
               onClick={() => scrollToSection("schools")}
-              className="font-sans text-sm hover:text-primary transition-colors"
+              className="font-sans text-sm hover:text-white transition-colors"
             >
               Schools Adopted
             </button>
             <button
               onClick={() => scrollToSection("gallery")}
-              className="font-sans text-sm hover:text-primary transition-colors"
+              className="font-sans text-sm hover:text-white transition-colors"
             >
               Gallery
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="font-sans text-sm hover:text-primary transition-colors"
+              className="font-sans text-sm hover:text-white transition-colors"
             >
               Contact Us
             </button>

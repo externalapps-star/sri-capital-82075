@@ -184,9 +184,9 @@ const Trust = () => {
             <CardContent className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-primary" />
-                <div>
+               <div>
                   <p className="font-medium mb-1">Address</p>
-                  <p className="text-foreground/70 text-sm">
+                  <p className="text-white text-sm">
                     C/o Nalam & Associates, 8th Floor, Sanali Spazio, Plot No.19,
                     TSIIC Software Units Layout, Hitech City, Hyderabad 500081
                   </p>

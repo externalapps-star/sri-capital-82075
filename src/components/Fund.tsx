@@ -52,7 +52,7 @@ const Fund = () => {
                     style={member.name === "Sashi Reddi" ? { objectPosition: 'calc(50% + 25px) calc(50% + 14px)' } : undefined}
                   />
                 </div>
-                <h4 className="font-serif text-xl sm:text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+                <h4 className="font-serif text-xl sm:text-2xl font-bold mb-2 group-hover:text-white transition-colors">
                   {member.name}
                 </h4>
                 <p className="font-sans text-base sm:text-lg text-muted-foreground mb-3 sm:mb-4">

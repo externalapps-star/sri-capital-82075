@@ -28,25 +28,25 @@ const Footer = () => {
             <nav className="flex flex-col gap-2">
               <button
                 onClick={() => scrollToSection("home")}
-                className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors text-left"
+                className="font-sans text-sm text-muted-foreground hover:text-white transition-colors text-left"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("focus")}
-                className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors text-left"
+                className="font-sans text-sm text-muted-foreground hover:text-white transition-colors text-left"
               >
                 Focus Areas
               </button>
               <button
                 onClick={() => scrollToSection("portfolio")}
-                className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors text-left"
+                className="font-sans text-sm text-muted-foreground hover:text-white transition-colors text-left"
               >
                 Portfolio
               </button>
               <button
                 onClick={() => scrollToSection("fund")}
-                className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors text-left"
+                className="font-sans text-sm text-muted-foreground hover:text-white transition-colors text-left"
               >
                 The Fund
               </button>
@@ -54,7 +54,7 @@ const Footer = () => {
                 href="/trust"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors text-left"
+                className="font-sans text-sm text-muted-foreground hover:text-white transition-colors text-left"
               >
                 SRI Trust
               </a>
@@ -71,7 +71,7 @@ const Footer = () => {
             </p>
             <a 
               href="mailto:funding@sricapital.com"
-              className="font-sans text-sm hover:text-primary transition-colors inline-block"
+              className="font-sans text-sm hover:text-white transition-colors inline-block"
             >
               funding@sricapital.com
             </a>

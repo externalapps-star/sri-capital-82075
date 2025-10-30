@@ -1,4 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useState } from "react";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -9,6 +12,12 @@ const scrollToSection = (id: string) => {
 
 const TrustHeader = () => {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = (id: string) => {
+    scrollToSection(id);
+    setIsOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -21,6 +30,7 @@ const TrustHeader = () => {
             SRI TRUST
           </button>
           
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             <button
               onClick={() => scrollToSection("about")}
@@ -47,6 +57,43 @@ const TrustHeader = () => {
               Contact Us
             </button>
           </nav>
+
+          {/* Mobile Navigation */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <button className="p-2 hover:bg-accent rounded-md transition-colors">
+                <Menu className="h-6 w-6" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[250px] sm:w-[300px]">
+              <nav className="flex flex-col gap-4 mt-8">
+                <button
+                  onClick={() => handleNavClick("about")}
+                  className="font-sans text-base hover:text-primary transition-colors text-left py-2"
+                >
+                  About Us
+                </button>
+                <button
+                  onClick={() => handleNavClick("schools")}
+                  className="font-sans text-base hover:text-primary transition-colors text-left py-2"
+                >
+                  Schools Adopted
+                </button>
+                <button
+                  onClick={() => handleNavClick("gallery")}
+                  className="font-sans text-base hover:text-primary transition-colors text-left py-2"
+                >
+                  Gallery
+                </button>
+                <button
+                  onClick={() => handleNavClick("contact")}
+                  className="font-sans text-base hover:text-primary transition-colors text-left py-2"
+                >
+                  Contact Us
+                </button>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>

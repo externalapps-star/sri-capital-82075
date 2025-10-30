@@ -106,7 +106,7 @@ const Trust = () => {
               <CardContent>
                 <div className="flex items-start gap-2 text-foreground/70">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                  <p className="text-sm text-justify">
+                  <p className="text-sm">
                     Ambedkar Nagar, Behind Padmalaya Studio, Road no. 78, Film Nagar, Hyderabad – 500036
                   </p>
                 </div>
@@ -123,7 +123,7 @@ const Trust = () => {
               <CardContent>
                 <div className="flex items-start gap-2 text-foreground/70">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                  <p className="text-sm text-justify">
+                  <p className="text-sm">
                     Madinaguda, Opp. Hanuman Temple, Miyapur Post, Sherilingam Pally Mandal, Hyderabad - 500050, RR District
                   </p>
                 </div>
@@ -140,7 +140,7 @@ const Trust = () => {
               <CardContent>
                 <div className="flex items-start gap-2 text-foreground/70">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                  <p className="text-sm text-justify">
+                  <p className="text-sm">
                     Pragathi Nagar, Bachupally Mandal, Hyderabad - 500090, Medchel District
                   </p>
                 </div>

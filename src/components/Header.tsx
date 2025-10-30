@@ -1,11 +1,6 @@
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,45 +61,50 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild className="md:hidden">
-              <button aria-label="Toggle menu">
-                <Menu size={24} />
-              </button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-full sm:w-[400px] border-l">
-              <nav className="flex flex-col gap-8 mt-12">
-                <button
-                  onClick={() => scrollToSection("focus")}
-                  className="text-left text-lg font-sans hover:text-accent transition-colors py-2"
-                >
-                  Focus Areas
-                </button>
-                <button
-                  onClick={() => scrollToSection("portfolio")}
-                  className="text-left text-lg font-sans hover:text-accent transition-colors py-2"
-                >
-                  Portfolio
-                </button>
-                <button
-                  onClick={() => scrollToSection("fund")}
-                  className="text-left text-lg font-sans hover:text-accent transition-colors py-2"
-                >
-                  The Fund
-                </button>
-                <a
-                  href="/trust"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-left text-lg font-sans hover:text-accent transition-colors py-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  SRI TRUST
-                </a>
-              </nav>
-            </SheetContent>
-          </Sheet>
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Navigation Drawer */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute right-0 top-full mt-0 bg-background border-l border-b border-border shadow-lg animate-slide-in-right">
+            <nav className="flex flex-col py-2 min-w-[200px]">
+              <button
+                onClick={() => scrollToSection("focus")}
+                className="text-left text-sm font-sans hover:bg-accent/10 transition-colors px-6 py-3"
+              >
+                Focus Areas
+              </button>
+              <button
+                onClick={() => scrollToSection("portfolio")}
+                className="text-left text-sm font-sans hover:bg-accent/10 transition-colors px-6 py-3"
+              >
+                Portfolio
+              </button>
+              <button
+                onClick={() => scrollToSection("fund")}
+                className="text-left text-sm font-sans hover:bg-accent/10 transition-colors px-6 py-3"
+              >
+                The Fund
+              </button>
+              <a
+                href="/trust"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-left text-sm font-sans hover:bg-accent/10 transition-colors px-6 py-3"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                SRI TRUST
+              </a>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );

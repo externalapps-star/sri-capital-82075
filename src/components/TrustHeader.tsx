@@ -1,11 +1,6 @@
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -62,42 +57,47 @@ const TrustHeader = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild className="md:hidden">
-              <button aria-label="Toggle menu">
-                <Menu size={24} />
-              </button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-full sm:w-[400px] border-l">
-              <nav className="flex flex-col gap-8 mt-12">
-                <button
-                  onClick={() => handleScrollToSection("about")}
-                  className="text-left font-sans text-lg hover:text-primary transition-colors py-2"
-                >
-                  About Us
-                </button>
-                <button
-                  onClick={() => handleScrollToSection("schools")}
-                  className="text-left font-sans text-lg hover:text-primary transition-colors py-2"
-                >
-                  Schools Adopted
-                </button>
-                <button
-                  onClick={() => handleScrollToSection("gallery")}
-                  className="text-left font-sans text-lg hover:text-primary transition-colors py-2"
-                >
-                  Gallery
-                </button>
-                <button
-                  onClick={() => handleScrollToSection("contact")}
-                  className="text-left font-sans text-lg hover:text-primary transition-colors py-2"
-                >
-                  Contact Us
-                </button>
-              </nav>
-            </SheetContent>
-          </Sheet>
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Navigation Drawer */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute right-0 top-full mt-0 bg-background border-l border-b border-border shadow-lg animate-slide-in-right">
+            <nav className="flex flex-col py-2 min-w-[200px]">
+              <button
+                onClick={() => handleScrollToSection("about")}
+                className="text-left font-sans text-sm hover:bg-primary/10 transition-colors px-6 py-3"
+              >
+                About Us
+              </button>
+              <button
+                onClick={() => handleScrollToSection("schools")}
+                className="text-left font-sans text-sm hover:bg-primary/10 transition-colors px-6 py-3"
+              >
+                Schools Adopted
+              </button>
+              <button
+                onClick={() => handleScrollToSection("gallery")}
+                className="text-left font-sans text-sm hover:bg-primary/10 transition-colors px-6 py-3"
+              >
+                Gallery
+              </button>
+              <button
+                onClick={() => handleScrollToSection("contact")}
+                className="text-left font-sans text-sm hover:bg-primary/10 transition-colors px-6 py-3"
+              >
+                Contact Us
+              </button>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );

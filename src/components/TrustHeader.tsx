@@ -69,7 +69,7 @@ const TrustHeader = () => {
 
         {/* Mobile Navigation Drawer */}
         {isMenuOpen && (
-          <div className="md:hidden absolute right-0 top-full mt-0 bg-background border-l border-b border-border shadow-lg animate-slide-in-right">
+          <div className="md:hidden absolute right-0 top-full mt-0 bg-background border-t border-l border-b border-border shadow-lg animate-slide-in-right">
             <nav className="flex flex-col py-2 min-w-[200px]">
               <button
                 onClick={() => handleScrollToSection("about")}

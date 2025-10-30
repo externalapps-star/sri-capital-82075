@@ -144,7 +144,14 @@ const Portfolio = () => {
                       )}
                     </a>
                     <p className="font-sans text-sm font-semibold text-foreground/80 mt-3 text-center">
-                      {company.displayName}
+                      {company.name === "Fakespot" ? (
+                        <>
+                          FAKESPOT<br />
+                          (acquired by Mozilla)
+                        </>
+                      ) : (
+                        company.displayName
+                      )}
                     </p>
                   </div>
                 ))}

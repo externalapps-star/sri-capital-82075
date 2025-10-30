@@ -65,12 +65,10 @@ const TrustHeader = () => {
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
-      </div>
-      
-      {/* Mobile Dropdown Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-background border-b border-border">
-          <nav className="container mx-auto max-w-7xl px-6 py-4 flex flex-col gap-2">
+        
+        {/* Mobile Dropdown Menu */}
+        {isOpen && (
+          <nav className="md:hidden pt-4 pb-2 flex flex-col gap-2">
             <button
               onClick={() => handleNavClick("about")}
               className="font-sans text-sm hover:text-primary transition-colors text-left py-2 hover:bg-accent rounded px-3"
@@ -96,8 +94,8 @@ const TrustHeader = () => {
               Contact Us
             </button>
           </nav>
-        </div>
-      )}
+        )}
+      </div>
     </header>
   );
 };

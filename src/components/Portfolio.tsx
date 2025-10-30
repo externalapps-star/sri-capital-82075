@@ -116,7 +116,7 @@ const Portfolio = () => {
                       href={company.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`flex items-center justify-center p-[30px] rounded-lg bg-white dark:bg-white border border-gray-200 dark:border-transparent hover:bg-white/95 dark:hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo cursor-pointer w-full ${
+                      className={`flex items-center justify-center p-3 sm:p-[30px] rounded-lg bg-white dark:bg-white border border-gray-200 dark:border-transparent hover:bg-white/95 dark:hover:bg-white/95 transition-all duration-300 hover:scale-105 aspect-square group/logo cursor-pointer w-full ${
                         isVisible ? 'animate-flip-in' : ''
                       }`}
                       style={{
@@ -130,8 +130,8 @@ const Portfolio = () => {
                           alt={`${company.name} logo`}
                           className={`object-contain transition-opacity duration-300 ${
                             company.name === 'EZDubs' 
-                              ? 'max-w-[70%] max-h-[70%]'
-                              : 'max-w-[150%] max-h-[150%]'
+                              ? 'max-w-[85%] max-h-[85%] sm:max-w-[70%] sm:max-h-[70%]'
+                              : 'max-w-full max-h-full sm:max-w-[150%] sm:max-h-[150%]'
                           }`}
                           style={
                             company.name === 'Softwear Automation' || company.name === 'DreamVu'

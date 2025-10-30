@@ -131,6 +131,8 @@ const Portfolio = () => {
                           className={`object-contain transition-opacity duration-300 ${
                             company.name === 'EZDubs' 
                               ? 'max-w-[85%] max-h-[85%] sm:max-w-[70%] sm:max-h-[70%]'
+                              : ['Beroe', 'Yellowdig', 'Softwear Automation', 'Edgetensor', 'Fakespot', 'DreamVu'].includes(company.name)
+                              ? 'max-w-[165%] max-h-[165%] sm:max-w-[150%] sm:max-h-[150%]'
                               : 'max-w-[180%] max-h-[180%] sm:max-w-[150%] sm:max-h-[150%]'
                           }`}
                           style={

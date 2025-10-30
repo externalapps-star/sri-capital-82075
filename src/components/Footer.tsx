@@ -12,17 +12,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Brand Section */}
           <div>
-            <div className="font-serif text-2xl font-semibold mb-3">
+            <div className="font-serif text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">
               SRI CAPITAL
             </div>
-            <p className="font-sans text-sm text-muted-foreground">
+            <p className="font-sans text-xs sm:text-sm text-muted-foreground">
               Early Stage US-India Investors
             </p>
           </div>
           
           {/* Quick Links */}
           <div>
-            <h3 className="font-sans text-sm font-semibold mb-3 uppercase tracking-wider">
+            <h3 className="font-sans text-xs sm:text-sm font-semibold mb-2 sm:mb-3 uppercase tracking-wider">
               Quick Links
             </h3>
             <nav className="flex flex-col gap-2">
@@ -63,10 +63,10 @@ const Footer = () => {
           
           {/* Contact Section */}
           <div>
-            <h3 className="font-sans text-sm font-semibold mb-3 uppercase tracking-wider">
+            <h3 className="font-sans text-xs sm:text-sm font-semibold mb-2 sm:mb-3 uppercase tracking-wider">
               Contact
             </h3>
-            <p className="font-sans text-sm text-muted-foreground mb-2">
+            <p className="font-sans text-xs sm:text-sm text-muted-foreground mb-2">
               Please send business plans to:
             </p>
             <a 
@@ -80,7 +80,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="pt-4 border-t border-border/50">
-          <p className="font-sans text-sm text-muted-foreground text-center">
+          <p className="font-sans text-xs sm:text-sm text-muted-foreground text-center">
             © 2025 SRI Capital. All rights reserved.
           </p>
         </div>

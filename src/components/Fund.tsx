@@ -26,7 +26,7 @@ const Fund = () => {
         </h2>
         
         <div className="space-y-6 mb-12">
-          <p className="font-sans text-base sm:text-lg md:text-xl leading-relaxed text-muted-foreground text-center text-justify max-w-3xl mx-auto px-4 sm:px-0">
+          <p className="font-sans text-base sm:text-lg md:text-xl leading-relaxed text-muted-foreground text-center max-w-3xl mx-auto px-4 sm:px-0">
             SRI Capital Fund I has been investing in early-stage technology companies across the US 
             and India since 2018. We provide not just capital, but strategic guidance and network access 
             to help founders scale their vision into reality. Fund I is currently not making new investments.

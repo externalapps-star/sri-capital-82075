@@ -42,6 +42,8 @@ const Fund = () => {
                   <img 
                     src={member.image} 
                     alt={`${member.name}, ${member.title} at SRI Capital`}
+                    loading="lazy"
+                    decoding="async"
                     className={`w-full h-full object-cover transition-transform duration-500 ${
                       member.name === "Sashi Reddi" 
                         ? "scale-110 group-hover:scale-[1.155]" 

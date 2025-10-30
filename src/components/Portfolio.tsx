@@ -129,6 +129,8 @@ const Portfolio = () => {
                         <img
                           src={company.logo}
                           alt={`${company.name} logo`}
+                          loading="lazy"
+                          decoding="async"
                           className={`w-full h-full object-contain transition-opacity duration-300 ${
                             company.name === 'EZDubs' 
                               ? 'scale-[0.83] sm:scale-[0.70]'

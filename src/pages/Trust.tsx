@@ -45,7 +45,7 @@ const Trust = () => {
             <Card className="border-2 hover:shadow-lg transition-all duration-300">
               <CardHeader className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                  <img src={eduIcon} alt="Education" className="w-12 h-12" />
+                  <img src={eduIcon} alt="Education" loading="lazy" decoding="async" className="w-12 h-12" />
                 </div>
                 <CardTitle className="text-3xl">Education</CardTitle>
               </CardHeader>
@@ -59,7 +59,7 @@ const Trust = () => {
             <Card className="border-2 hover:shadow-lg transition-all duration-300">
               <CardHeader className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 bg-secondary/10 rounded-full flex items-center justify-center">
-                  <img src={healthIcon} alt="Health" className="w-12 h-12" />
+                  <img src={healthIcon} alt="Health" loading="lazy" decoding="async" className="w-12 h-12" />
                 </div>
                 <CardTitle className="text-3xl">Health</CardTitle>
               </CardHeader>
@@ -163,6 +163,8 @@ const Trust = () => {
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>

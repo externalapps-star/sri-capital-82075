@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto max-w-5xl text-center relative z-10">
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 sm:mb-8 leading-tight animate-fade-in">
+        <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 sm:mb-8 leading-tight animate-fade-in">
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Early Stage{" "}
           </span>
@@ -29,7 +29,7 @@ const Hero = () => {
             {" "}Investors
           </span>
         </h1>
-        <p className="font-sans text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
+        <p className="font-sans text-lg sm:text-xl md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
           We invest in transformative companies at the intersection of artificial intelligence, 
           robotics, and enterprise software, bridging innovation across the United States and India.
         </p>

@@ -33,7 +33,7 @@ const Fund = () => {
           </p>
         </div>
 
-        <div className="border-t border-border/50 pt-10">
+        <div className="border-t border-border pt-10">
           <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Team</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {teamMembers.map((member) => (

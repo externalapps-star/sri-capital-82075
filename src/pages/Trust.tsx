@@ -99,7 +99,7 @@ const Trust = () => {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl">Film Nagar School</CardTitle>
-                <CardDescription className="text-base mt-2">
+                <CardDescription className="text-sm mt-2">
                   Govt. Primary School
                 </CardDescription>
               </CardHeader>
@@ -116,7 +116,7 @@ const Trust = () => {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl">Madinaguda School</CardTitle>
-                <CardDescription className="text-base mt-2">
+                <CardDescription className="text-sm mt-2">
                   Mandal Parishad Upper Primary School
                 </CardDescription>
               </CardHeader>
@@ -133,7 +133,7 @@ const Trust = () => {
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl">Pragathi Nagar School</CardTitle>
-                <CardDescription className="text-base mt-2">
+                <CardDescription className="text-sm mt-2">
                   Mandal Parishad Primary School
                 </CardDescription>
               </CardHeader>

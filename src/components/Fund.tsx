@@ -1,5 +1,5 @@
-import sashiReddiImage from "@/assets/sashi-reddi.png";
-import docParghiImage from "@/assets/doc-parghi.png";
+import sashiReddiImage from "@/assets/sashi-reddi-new.png";
+import docParghiImage from "@/assets/doc-parghi-new.png";
 import { Linkedin } from "lucide-react";
 
 const Fund = () => {

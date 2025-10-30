@@ -19,13 +19,13 @@ const Fund = () => {
   ];
 
   return (
-    <section id="fund" className="py-6 px-6">
+    <section id="fund" className="py-16 px-6">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           The Fund
         </h2>
         
-        <div className="space-y-6 mb-6">
+        <div className="space-y-6 mb-12">
           <p className="font-sans text-base sm:text-lg md:text-xl leading-relaxed text-muted-foreground text-center max-w-3xl mx-auto px-4 sm:px-0">
             SRI Capital Fund I has been investing in early-stage technology companies across the US 
             and India since 2018. We provide not just capital, but strategic guidance and network access 
@@ -33,8 +33,8 @@ const Fund = () => {
           </p>
         </div>
 
-        <div className="border-t border-border pt-6">
-          <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">Team</h3>
+        <div className="border-t border-border pt-10">
+          <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Team</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {teamMembers.map((member) => (
               <div key={member.name} className="group text-center">

@@ -30,13 +30,6 @@ const Header = () => {
             SRI CAPITAL
           </button>
 
-          {/* Center Tagline */}
-          <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <p className="font-serif text-[19px] font-bold whitespace-nowrap bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Investing in the Future of Technology
-            </p>
-          </div>
-
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button

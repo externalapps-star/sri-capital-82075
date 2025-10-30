@@ -1,6 +1,11 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Menu } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,47 +66,45 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <button aria-label="Toggle menu">
+                <Menu size={24} />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[240px]">
+              <nav className="flex flex-col gap-6 mt-8">
+                <button
+                  onClick={() => scrollToSection("focus")}
+                  className="text-left text-sm font-sans hover:text-accent transition-colors"
+                >
+                  Focus Areas
+                </button>
+                <button
+                  onClick={() => scrollToSection("portfolio")}
+                  className="text-left text-sm font-sans hover:text-accent transition-colors"
+                >
+                  Portfolio
+                </button>
+                <button
+                  onClick={() => scrollToSection("fund")}
+                  className="text-left text-sm font-sans hover:text-accent transition-colors"
+                >
+                  The Fund
+                </button>
+                <a
+                  href="/trust"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-left text-sm font-sans hover:text-accent transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  SRI TRUST
+                </a>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="md:hidden pt-4 pb-2 flex flex-col gap-4">
-            <button
-              onClick={() => scrollToSection("focus")}
-              className="text-left text-sm font-sans hover:text-accent transition-colors"
-            >
-              Focus Areas
-            </button>
-            <button
-              onClick={() => scrollToSection("portfolio")}
-              className="text-left text-sm font-sans hover:text-accent transition-colors"
-            >
-              Portfolio
-            </button>
-            <button
-              onClick={() => scrollToSection("fund")}
-              className="text-left text-sm font-sans hover:text-accent transition-colors"
-            >
-              The Fund
-            </button>
-            <a
-              href="/trust"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-left text-sm font-sans hover:text-accent transition-colors"
-            >
-              SRI TRUST
-            </a>
-          </nav>
-        )}
       </div>
     </header>
   );

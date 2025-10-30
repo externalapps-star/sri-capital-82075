@@ -62,7 +62,7 @@ const Fund = () => {
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors whitespace-nowrap"
+                  className="inline-flex items-center gap-2 text-white hover:text-white/80 transition-colors whitespace-nowrap"
                   aria-label={`Visit ${member.name}'s LinkedIn profile`}
                 >
                   <Linkedin className="w-5 h-5" />

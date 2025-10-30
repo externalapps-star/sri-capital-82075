@@ -43,7 +43,7 @@ const Fund = () => {
                     src={member.image} 
                     alt={`${member.name}, ${member.title} at SRI Capital`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    style={member.name === "Sashi Reddi" ? { objectPosition: 'center 29px', transform: 'scale(1.24)' } : undefined}
+                    style={undefined}
                   />
                 </div>
                 <h4 className="font-serif text-2xl font-bold mb-2 group-hover:text-primary transition-colors">

@@ -42,7 +42,7 @@ const Trust = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 hover:shadow-lg transition-all duration-300">
+            <Card className="border-2 hover:border-white hover:shadow-[0_0_30px_rgba(255,255,255,0.4),0_25px_60px_rgba(0,0,0,0.35)] dark:hover:shadow-[0_0_30px_rgba(255,255,255,0.5),0_25px_60px_rgba(0,0,0,0.6)] transition-all duration-500">
               <CardHeader className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                   <img src={eduIcon} alt="Education" loading="lazy" decoding="async" className="w-12 h-12" />
@@ -56,7 +56,7 @@ const Trust = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:shadow-lg transition-all duration-300">
+            <Card className="border-2 hover:border-white hover:shadow-[0_0_30px_rgba(255,255,255,0.4),0_25px_60px_rgba(0,0,0,0.35)] dark:hover:shadow-[0_0_30px_rgba(255,255,255,0.5),0_25px_60px_rgba(0,0,0,0.6)] transition-all duration-500">
               <CardHeader className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 bg-secondary/10 rounded-full flex items-center justify-center">
                   <img src={healthIcon} alt="Health" loading="lazy" decoding="async" className="w-12 h-12" />
@@ -179,13 +179,13 @@ const Trust = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-white">Contact Us</h2>
           <Card className="max-w-2xl mx-auto">
             <CardHeader>
-              <CardTitle className="text-2xl">SRI Charitable Trust</CardTitle>
+              <CardTitle className="text-2xl text-white">SRI Charitable Trust</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-primary" />
-               <div>
-                  <p className="font-medium mb-1">Address</p>
+                <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-white" />
+                <div>
+                  <p className="font-medium mb-1 text-white">Address</p>
                   <p className="text-white text-sm">
                     C/o Nalam & Associates, 8th Floor, Sanali Spazio, Plot No.19,
                     TSIIC Software Units Layout, Hitech City, Hyderabad 500081
@@ -193,12 +193,12 @@ const Trust = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 flex-shrink-0 text-primary" />
+                <Mail className="w-5 h-5 flex-shrink-0 text-white" />
                 <div>
-                  <p className="font-medium mb-1">For Enquiries</p>
+                  <p className="font-medium mb-1 text-white">For Enquiries</p>
                   <a
                     href="mailto:charity@sricapital.com"
-                    className="text-primary hover:underline text-sm"
+                    className="text-white hover:underline text-sm"
                   >
                     charity@sricapital.com
                   </a>

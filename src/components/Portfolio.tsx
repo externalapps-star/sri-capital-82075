@@ -128,12 +128,12 @@ const Portfolio = () => {
                         <img
                           src={company.logo}
                           alt={`${company.name} logo`}
-                          className={`object-contain transition-opacity duration-300 ${
+                          className={`w-full h-full object-contain transition-opacity duration-300 ${
                             company.name === 'EZDubs' 
-                              ? 'max-w-[83%] max-h-[83%] sm:max-w-[70%] sm:max-h-[70%]'
+                              ? 'scale-[0.83] sm:scale-[0.70]'
                               : ['Beroe', 'Yellowdig', 'Softwear Automation', 'Edgetensor', 'Fakespot', 'DreamVu'].includes(company.name)
-                              ? 'max-w-[163%] max-h-[163%] sm:max-w-[150%] sm:max-h-[150%]'
-                              : 'max-w-[178%] max-h-[178%] sm:max-w-[150%] sm:max-h-[150%]'
+                              ? 'scale-[1.40] sm:scale-[1.50]'
+                              : 'scale-[1.50] sm:scale-[1.50]'
                           }`}
                           style={
                             company.name === 'Softwear Automation' || company.name === 'DreamVu'

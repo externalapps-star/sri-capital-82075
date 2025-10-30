@@ -19,7 +19,7 @@ const Trust = () => {
       
       {/* Hero Section */}
       <section 
-        className="relative pt-28 pb-16 px-4 bg-cover min-h-[50vh] flex items-center"
+        className="relative pt-20 pb-8 px-4 bg-cover min-h-[50vh] flex items-center"
         style={{ backgroundImage: `url(${trustHero})`, backgroundPosition: '60% center' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/50 to-background/40" />
@@ -34,9 +34,9 @@ const Trust = () => {
       </section>
 
       {/* Education & Health Section */}
-      <section className="py-12 px-4 bg-background">
+      <section className="py-6 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-10">
+          <div className="text-center mb-6">
             <p className="text-2xl md:text-3xl text-foreground/90 max-w-4xl mx-auto leading-relaxed">
               SRI Trust aims to improve the lives of poor children by supporting their education and health needs.
             </p>
@@ -74,9 +74,9 @@ const Trust = () => {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="py-12 px-4 bg-muted/30">
+      <section id="about" className="py-6 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-slate-700 dark:text-slate-300">About Us</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-4 text-slate-700 dark:text-slate-300">About Us</h2>
           <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
             <p>
               SRI Trust is the charitable arm of Ashwini and Sashi P. Reddi.
@@ -92,9 +92,9 @@ const Trust = () => {
       </section>
 
       {/* Schools Section */}
-      <section id="schools" className="py-12 px-4 bg-background">
+      <section id="schools" className="py-6 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-10 text-slate-700 dark:text-slate-300">Schools Adopted</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-6 text-slate-700 dark:text-slate-300">Schools Adopted</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
@@ -151,9 +151,9 @@ const Trust = () => {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-12 px-4 bg-muted/30">
+      <section id="gallery" className="py-6 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-10 text-slate-700 dark:text-slate-300">Gallery</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-6 text-slate-700 dark:text-slate-300">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[gallery1, gallery2, gallery3, gallery4, gallery5, gallery6].map((image, index) => (
               <div
@@ -172,9 +172,9 @@ const Trust = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-12 px-4 bg-background">
+      <section id="contact" className="py-6 px-4 bg-background">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-slate-700 dark:text-slate-300">Contact Us</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-4 text-slate-700 dark:text-slate-300">Contact Us</h2>
           <Card className="max-w-2xl mx-auto">
             <CardHeader>
               <CardTitle className="text-2xl">SRI Charitable Trust</CardTitle>

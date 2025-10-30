@@ -7,7 +7,7 @@ const scrollToSection = (id: string) => {
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border py-8 px-6 bg-card/30">
+    <footer className="border-t border-border py-4 px-6 bg-card/30">
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Brand Section */}

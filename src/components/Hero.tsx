@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 py-16 relative overflow-hidden bg-gradient-to-b from-background via-background to-card/30">
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 py-8 relative overflow-hidden bg-gradient-to-b from-background via-background to-card/30">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
       <div className="absolute top-20 right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />

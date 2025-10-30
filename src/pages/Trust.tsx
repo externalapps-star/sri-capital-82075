@@ -106,7 +106,7 @@ const Trust = () => {
               <CardContent>
                 <div className="flex items-start gap-2 text-foreground/70">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                  <p className="text-sm">
+                  <p className="text-sm text-justify">
                     Ambedkar Nagar, Behind Padmalaya Studio, Road no. 78, Film Nagar, Hyderabad – 500036
                   </p>
                 </div>
@@ -123,7 +123,7 @@ const Trust = () => {
               <CardContent>
                 <div className="flex items-start gap-2 text-foreground/70">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                  <p className="text-sm">
+                  <p className="text-sm text-justify">
                     Madinaguda, Opp. Hanuman Temple, Miyapur Post, Sherilingam Pally Mandal, Hyderabad - 500050, RR District
                   </p>
                 </div>
@@ -140,7 +140,7 @@ const Trust = () => {
               <CardContent>
                 <div className="flex items-start gap-2 text-foreground/70">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                  <p className="text-sm">
+                  <p className="text-sm text-justify">
                     Pragathi Nagar, Bachupally Mandal, Hyderabad - 500090, Medchel District
                   </p>
                 </div>
@@ -184,7 +184,7 @@ const Trust = () => {
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-primary" />
                 <div>
                   <p className="font-medium mb-1">Address</p>
-                  <p className="text-foreground/70 text-sm">
+                  <p className="text-foreground/70 text-sm text-justify">
                     C/o Nalam & Associates, 8th Floor, Sanali Spazio, Plot No.19,
                     TSIIC Software Units Layout, Hitech City, Hyderabad 500081
                   </p>

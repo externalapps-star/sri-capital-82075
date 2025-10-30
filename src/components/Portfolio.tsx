@@ -89,7 +89,7 @@ const Portfolio = () => {
     <section ref={sectionRef} id="portfolio" className="py-16 px-6 bg-card/50">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white">
             Portfolio
           </h2>
           <p className="font-sans text-base sm:text-lg md:text-xl text-muted-foreground px-4 sm:px-0">
@@ -106,7 +106,7 @@ const Portfolio = () => {
               <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-30 dark:opacity-20`} />
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <h3 className="font-serif text-xl sm:text-2xl font-bold mb-4 sm:mb-6 relative z-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <h3 className="font-serif text-xl sm:text-2xl font-bold mb-4 sm:mb-6 relative z-10 text-white">
                 {category.title}
               </h3>
               

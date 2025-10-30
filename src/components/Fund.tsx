@@ -21,7 +21,7 @@ const Fund = () => {
   return (
     <section id="fund" className="py-16 px-6">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 text-center text-white">
           The Fund
         </h2>
         
@@ -34,7 +34,7 @@ const Fund = () => {
         </div>
 
         <div className="border-t border-border pt-10">
-          <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Team</h3>
+          <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center text-white">Team</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {teamMembers.map((member) => (
               <div key={member.name} className="group text-center">

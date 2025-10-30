@@ -6,8 +6,8 @@ const Hero = () => {
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto max-w-5xl text-center relative z-10">
-        <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 sm:mb-8 leading-tight animate-fade-in">
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 sm:mb-8 leading-tight animate-fade-in text-white">
+          <span>
             Early Stage{" "}
           </span>
           <span 
@@ -16,7 +16,7 @@ const Hero = () => {
           >
             US
           </span>
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <span>
             -
           </span>
           <span 
@@ -25,7 +25,7 @@ const Hero = () => {
           >
             India
           </span>
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <span>
             {" "}Investors
           </span>
         </h1>

@@ -31,7 +31,7 @@ const FocusAreas = () => {
     <section id="focus" className="py-12 px-6">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-10">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white">
             Investment Focus
           </h2>
           <p className="font-sans text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4 sm:px-0">
@@ -60,7 +60,7 @@ const FocusAreas = () => {
               
               {/* Text Overlay */}
               <div className="relative h-full flex flex-col justify-center items-center text-center p-4 sm:p-5 md:p-6">
-                <h3 className="font-serif text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold mb-2 sm:mb-3 md:mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                <h3 className="font-serif text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold mb-2 sm:mb-3 md:mb-4 text-white">
                   {area.title}
                 </h3>
                 <p className="font-sans text-sm sm:text-base md:text-lg text-foreground/90 dark:text-foreground/85 leading-relaxed max-w-md px-2 sm:px-0">

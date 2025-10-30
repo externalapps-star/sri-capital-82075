@@ -24,7 +24,7 @@ const Trust = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/50 to-background/40" />
         <div className="container mx-auto max-w-4xl text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
             Giving our children a better life
           </h1>
           <p className="text-2xl md:text-3xl text-foreground font-medium">
@@ -76,7 +76,7 @@ const Trust = () => {
       {/* About Us Section */}
       <section id="about" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-foreground">About Us</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-white">About Us</h2>
           <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
             <p>
               SRI Trust is the charitable arm of Ashwini and Sashi P. Reddi.
@@ -94,7 +94,7 @@ const Trust = () => {
       {/* Schools Section */}
       <section id="schools" className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-10 text-foreground">Schools Adopted</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-10 text-white">Schools Adopted</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardHeader>
@@ -153,7 +153,7 @@ const Trust = () => {
       {/* Gallery Section */}
       <section id="gallery" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-10 text-foreground">Gallery</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-10 text-white">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[gallery1, gallery2, gallery3, gallery4, gallery5, gallery6].map((image, index) => (
               <div
@@ -176,7 +176,7 @@ const Trust = () => {
       {/* Contact Section */}
       <section id="contact" className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-foreground">Contact Us</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-8 text-white">Contact Us</h2>
           <Card className="max-w-2xl mx-auto">
             <CardHeader>
               <CardTitle className="text-2xl">SRI Charitable Trust</CardTitle>

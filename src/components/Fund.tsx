@@ -38,7 +38,7 @@ const Fund = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {teamMembers.map((member) => (
               <div key={member.name} className="group text-center">
-                <div className="overflow-hidden rounded-2xl border-2 border-border hover:border-primary/60 transition-all duration-500 shadow-[0_10px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4),0_25px_60px_rgba(0,0,0,0.35)] dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] dark:hover:shadow-[0_0_30px_rgba(255,255,255,0.5),0_25px_60px_rgba(0,0,0,0.6)] mb-4 sm:mb-6 w-full max-w-[300px] h-[300px] sm:max-w-[350px] sm:h-[350px] md:max-w-[400px] md:h-[400px] mx-auto">
+                <div className="overflow-hidden rounded-2xl border-2 border-border hover:border-white transition-all duration-500 shadow-[0_10px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4),0_25px_60px_rgba(0,0,0,0.35)] dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] dark:hover:shadow-[0_0_30px_rgba(255,255,255,0.5),0_25px_60px_rgba(0,0,0,0.6)] mb-4 sm:mb-6 w-full max-w-[300px] h-[300px] sm:max-w-[350px] sm:h-[350px] md:max-w-[400px] md:h-[400px] mx-auto">
                   <img 
                     src={member.image} 
                     alt={`${member.name}, ${member.title} at SRI Capital`}

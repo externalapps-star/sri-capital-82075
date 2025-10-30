@@ -29,10 +29,6 @@ const Hero = () => {
             {" "}Investors
           </span>
         </h1>
-        <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          We invest in transformative companies at the intersection of artificial intelligence, 
-          robotics, and enterprise software, bridging innovation across the United States and India.
-        </p>
       </div>
 
       {/* Scroll Indicator */}

@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
         
         {/* Copyright */}
-        <div className="pt-4 border-t border-border/50">
+        <div className="pt-4 border-t border-border">
           <p className="font-sans text-xs sm:text-sm text-muted-foreground text-center">
             © 2025 SRI Capital. All rights reserved.
           </p>

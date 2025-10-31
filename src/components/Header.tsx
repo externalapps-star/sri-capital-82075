@@ -51,7 +51,7 @@ const Header = () => {
               The Fund
             </button>
             <a
-              href="/trust"
+              href="http://sritrust.org/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-sans text-white relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -94,7 +94,7 @@ const Header = () => {
                 The Fund
               </button>
               <a
-                href="/trust"
+                href="http://sritrust.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-left text-sm font-sans text-white hover:bg-white/10 transition-colors px-6 py-3"

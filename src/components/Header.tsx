@@ -34,19 +34,19 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("focus")}
-              className="text-sm font-sans hover:text-accent transition-colors"
+              className="text-sm font-sans text-white relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
             >
               Focus Areas
             </button>
             <button
               onClick={() => scrollToSection("portfolio")}
-              className="text-sm font-sans hover:text-accent transition-colors"
+              className="text-sm font-sans text-white relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
             >
               Portfolio
             </button>
             <button
               onClick={() => scrollToSection("fund")}
-              className="text-sm font-sans hover:text-accent transition-colors"
+              className="text-sm font-sans text-white relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
             >
               The Fund
             </button>
@@ -54,7 +54,7 @@ const Header = () => {
               href="/trust"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-sans hover:text-accent transition-colors"
+              className="text-sm font-sans text-white relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
             >
               SRI TRUST
             </a>
@@ -77,19 +77,19 @@ const Header = () => {
             <nav className="flex flex-col py-2 min-w-[200px]">
               <button
                 onClick={() => scrollToSection("focus")}
-                className="text-left text-sm font-sans hover:bg-accent/10 transition-colors px-6 py-3"
+                className="text-left text-sm font-sans text-white hover:bg-white/10 transition-colors px-6 py-3"
               >
                 Focus Areas
               </button>
               <button
                 onClick={() => scrollToSection("portfolio")}
-                className="text-left text-sm font-sans hover:bg-accent/10 transition-colors px-6 py-3"
+                className="text-left text-sm font-sans text-white hover:bg-white/10 transition-colors px-6 py-3"
               >
                 Portfolio
               </button>
               <button
                 onClick={() => scrollToSection("fund")}
-                className="text-left text-sm font-sans hover:bg-accent/10 transition-colors px-6 py-3"
+                className="text-left text-sm font-sans text-white hover:bg-white/10 transition-colors px-6 py-3"
               >
                 The Fund
               </button>
@@ -97,7 +97,7 @@ const Header = () => {
                 href="/trust"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-left text-sm font-sans hover:bg-accent/10 transition-colors px-6 py-3"
+                className="text-left text-sm font-sans text-white hover:bg-white/10 transition-colors px-6 py-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 SRI TRUST

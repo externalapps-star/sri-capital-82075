@@ -71,7 +71,7 @@ const Footer = () => {
             </p>
             <a 
               href="mailto:funding@sricapital.com"
-              className="font-sans text-sm hover:text-white transition-colors inline-block"
+              className="font-sans text-sm text-white inline-block relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
             >
               funding@sricapital.com
             </a>

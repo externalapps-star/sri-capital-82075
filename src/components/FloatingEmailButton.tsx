@@ -30,7 +30,7 @@ const FloatingEmailButton = () => {
     const mailtoLink = `mailto:funding@sricapital.com?subject=${encodeURIComponent(
       formData.subject
     )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      `Hi Sri Capital Team,\n\nPlease find my details below:\n\nName: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}\n\nLooking forward to hearing from you.\n\nBest regards,\n${formData.name}`
     )}`;
     
     window.location.href = mailtoLink;

@@ -198,7 +198,7 @@ const Trust = () => {
                   <p className="font-medium mb-1 text-white">For Enquiries</p>
                   <a
                     href="mailto:charity@sricapital.com"
-                    className="text-white hover:underline text-sm"
+                    className="text-white text-sm inline-block relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                   >
                     charity@sricapital.com
                   </a>

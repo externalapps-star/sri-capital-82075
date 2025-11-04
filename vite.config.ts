@@ -9,6 +9,13 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // :point_down: Add the 'preview' block here
+  preview: {
+    allowedHosts: [
+      'sricapital.com','www.sricapital.com' // :point_left: This is the required fix
+    ],
+  },
+  // :point_up_2: End of 'preview' block
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {

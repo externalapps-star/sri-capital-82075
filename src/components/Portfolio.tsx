@@ -24,7 +24,7 @@ const portfolioCategories = [
     title: "Artificial Intelligence",
     companies: [
       { name: "Fakespot", displayName: "FAKESPOT (acquired by Mozilla)", logo: fakespotLogo, url: "https://www.mozilla.org/en-US/" },
-      { name: "EZDubs", displayName: "EZDUBS", logo: ezdubsLogo, url: "https://ezdubs.ai/" },
+      { name: "EZDubs", displayName: "EZDUBS (acquired by Cisco)", logo: ezdubsLogo, url: "https://ezdubs.ai/" },
       { name: "Edgetensor", displayName: "EDGETENSOR", logo: edgetensorLogo, url: "https://edgetensor.ai/" },
     ] as Company[],
     color: "from-blue-500/20 to-purple-500/20",
@@ -153,6 +153,11 @@ const Portfolio = () => {
                         <>
                           FAKESPOT<br />
                           (acquired by Mozilla)
+                        </>
+                      ) : company.name === "EZDubs" ? (
+                        <>
+                          EZDUBS<br />
+                          (acquired by Cisco)
                         </>
                       ) : (
                         company.displayName

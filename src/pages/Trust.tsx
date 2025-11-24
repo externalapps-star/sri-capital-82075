@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Mail } from "lucide-react";
 import eduIcon from "@/assets/edu-icon.png";
@@ -14,8 +15,13 @@ import TrustFooter from "@/components/TrustFooter";
 
 const Trust = () => {
   return (
-    <div className="min-h-screen font-sans">
-      <TrustHeader />
+    <>
+      <Helmet>
+        <link rel="canonical" href="https://sricapital.com/trust" />
+        <meta property="og:url" content="https://sricapital.com/trust" />
+      </Helmet>
+      <div className="min-h-screen font-sans">
+        <TrustHeader />
       
       {/* Hero Section */}
       <section 
@@ -210,7 +216,8 @@ const Trust = () => {
       </section>
 
       <TrustFooter />
-    </div>
+      </div>
+    </>
   );
 };
 
